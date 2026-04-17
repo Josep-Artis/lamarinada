@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Marinada — Sitges · Pescado a la Brasa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body class="lang-es">
+
+<!-- ═══════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<nav class="main-nav transparent" id="main-nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-main">La Marinada</span>
+    <span class="nav-logo-sub">Sitges · Primera línia de mar</span>
+  </a>
+
+  <ul class="nav-links">
+    <li data-lang="ca"><a href="#especialitat">L'Especialitat</a></li>
+    <li data-lang="ca"><a href="carta.html">La Carta</a></li>
+    <li data-lang="ca"><a href="#reserva">Reserva</a></li>
+    <li data-lang="ca"><a href="#contacte">Contacte</a></li>
+
+    <li data-lang="es"><a href="#especialitat">La Especialidad</a></li>
+    <li data-lang="es"><a href="carta.html">La Carta</a></li>
+    <li data-lang="es"><a href="#reserva">Reservas</a></li>
+    <li data-lang="es"><a href="#contacte">Contacto</a></li>
+
+    <li data-lang="en"><a href="#especialitat">Our Specialty</a></li>
+    <li data-lang="en"><a href="carta.html">Menu</a></li>
+    <li data-lang="en"><a href="#reserva">Reserve</a></li>
+    <li data-lang="en"><a href="#contacte">Contact</a></li>
+  </ul>
+
+  <div class="lang-switcher">
+    <button onclick="setLang('ca')" data-lbtn="ca">CA</button>
+    <button onclick="setLang('es')" data-lbtn="es">ES</button>
+    <button onclick="setLang('en')" data-lbtn="en">EN</button>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="horizon-lines" id="horizon-lines"></div>
+  <div class="foam-dots" id="foam-dots"></div>
+
+  <div class="hero-content">
+    <div class="hero-location">
+      <span class="hero-location-rule"></span>
+      <span>
+        <span data-lang="ca">Platja de Sant Sebastià · Sitges</span>
+        <span data-lang="es">Playa de San Sebastián · Sitges</span>
+        <span data-lang="en">San Sebastián Beach · Sitges</span>
+      </span>
+      <span class="hero-location-rule r"></span>
+    </div>
+
+    <h1 class="hero-title">
+      La Marinada
+      <span class="hero-title-script">
+        <span data-lang="ca">Peix fresc a la brasa</span>
+        <span data-lang="es">Pescado fresco a la brasa</span>
+        <span data-lang="en">Fresh fish over the grill</span>
+      </span>
+    </h1>
+
+    <div class="hero-sep">
+      <span class="hero-sep-line"></span>
+      <span class="hero-sep-diamond"></span>
+      <span class="hero-sep-line r"></span>
+    </div>
+
+    <p class="hero-tagline">
+      <span data-lang="ca">Cuina vasco-catalana. Producte de mercat. Primera línia de mar.</span>
+      <span data-lang="es">Cocina vasco-catalana. Producto de mercado. Primera línea de mar.</span>
+      <span data-lang="en">Basque-Catalan cuisine. Market produce. Right on the seafront.</span>
+    </p>
+
+    <div class="hero-cta">
+      <a href="carta.html" class="btn btn-primary">
+        <span data-lang="ca">Veure la carta</span>
+        <span data-lang="es">Ver la carta</span>
+        <span data-lang="en">View the menu</span>
+      </a>
+      <a href="#reserva" class="btn btn-outline">
+        <span data-lang="ca">Fer reserva</span>
+        <span data-lang="es">Reservar mesa</span>
+        <span data-lang="en">Make a reservation</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-text">
+      <span data-lang="ca">Descobrir</span>
+      <span data-lang="es">Descubrir</span>
+      <span data-lang="en">Discover</span>
+    </span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PILLARS
+════════════════════════════════════════ -->
+<section class="pillars">
+  <div class="pillar">
+    <span class="pillar-icon">🐟</span>
+    <div class="pillar-title">
+      <span data-lang="ca">Peix fresc</span>
+      <span data-lang="es">Pescado fresco</span>
+      <span data-lang="en">Fresh fish</span>
+    </div>
+    <p class="pillar-text">
+      <span data-lang="ca">Producte de llotja, seleccionat cada dia. Del mar a la brasa.</span>
+      <span data-lang="es">Producto de lonja, seleccionado cada día. Del mar a la brasa.</span>
+      <span data-lang="en">Market fish, selected daily. From sea to grill.</span>
+    </p>
+  </div>
+  <div class="pillar">
+    <span class="pillar-icon">🔥</span>
+    <div class="pillar-title">
+      <span data-lang="ca">Brasa</span>
+      <span data-lang="es">Brasa</span>
+      <span data-lang="en">The grill</span>
+    </div>
+    <p class="pillar-text">
+      <span data-lang="ca">Cocina acristalada a la vista. El punt exacte de la brasa, sempre.</span>
+      <span data-lang="es">Cocina acristalada a la vista. El punto exacto de la brasa, siempre.</span>
+      <span data-lang="en">Open kitchen in full view. The perfect grill, every time.</span>
+    </p>
+  </div>
+  <div class="pillar">
+    <span class="pillar-icon">🌊</span>
+    <div class="pillar-title">
+      <span data-lang="ca">Primera línia</span>
+      <span data-lang="es">Primera línea</span>
+      <span data-lang="en">Seafront</span>
+    </div>
+    <p class="pillar-text">
+      <span data-lang="ca">A la platja de Sant Sebastià de Sitges. Mar davant, pau a taula.</span>
+      <span data-lang="es">En la playa de San Sebastián de Sitges. Mar enfrente, calma en la mesa.</span>
+      <span data-lang="en">On San Sebastián beach in Sitges. Sea ahead, calm at the table.</span>
+    </p>
+  </div>
+  <div class="pillar">
+    <span class="pillar-icon">🫶</span>
+    <div class="pillar-title">
+      <span data-lang="ca">Servei familiar</span>
+      <span data-lang="es">Servicio familiar</span>
+      <span data-lang="en">Family service</span>
+    </div>
+    <p class="pillar-text">
+      <span data-lang="ca">Tracte proper i professional. Un restaurant petit, sense presses.</span>
+      <span data-lang="es">Trato cercano y profesional. Un restaurante pequeño, sin prisas.</span>
+      <span data-lang="en">Personal and professional. A small restaurant, no rush.</span>
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     SPECIALTY
+════════════════════════════════════════ -->
+<section class="specialty" id="especialitat">
+  <div class="specialty-visual">
+    <div class="spec-img-frame">
+      <!-- Replace <div> with <img src="img/rodaballo.jpg" alt="Rodaballo a la brasa"> -->
+      <div class="spec-img-placeholder">
+        <span>🐟</span>
+        <p>
+          <span data-lang="ca">Foto del rodaballo a la brasa</span>
+          <span data-lang="es">Foto del rodaballo a la brasa</span>
+          <span data-lang="en">Wood-fired turbot photo</span>
+        </p>
+      </div>
+    </div>
+    <div class="spec-badge">
+      <span class="spec-badge-top">
+        <span data-lang="ca">La nostra estrella</span>
+        <span data-lang="es">Nuestra estrella</span>
+        <span data-lang="en">Our star dish</span>
+      </span>
+      <span class="spec-badge-place">Sitges</span>
+    </div>
+  </div>
+
+  <div class="specialty-text">
+    <p class="spec-eyebrow">
+      <span data-lang="ca">L'especialitat de la casa</span>
+      <span data-lang="es">La especialidad de la casa</span>
+      <span data-lang="en">House specialty</span>
+    </p>
+    <h2>
+      <span data-lang="ca">Rodaballo<br><em>a la brasa</em></span>
+      <span data-lang="es">Rodaballo<br><em>a la brasa</em></span>
+      <span data-lang="en">Turbot<br><em>over the grill</em></span>
+    </h2>
+    <p>
+      <span data-lang="ca">El rei de la nostra carta. Rodaballo salvatge, seleccionat a la llotja, cuit a la brasa amb el punt exacte que només dona l'experiència. La pell cruixent, la carn blanca i sucosa. Un plat que parla sol.</span>
+      <span data-lang="es">El rey de nuestra carta. Rodaballo salvaje, seleccionado en lonja, cocinado a la brasa con el punto exacto que solo da la experiencia. La piel crujiente, la carne blanca y jugosa. Un plato que habla por sí solo.</span>
+      <span data-lang="en">The king of our menu. Wild turbot, sourced at the market, grilled to the precise point that only experience can deliver. Crispy skin, white and juicy flesh. A dish that speaks for itself.</span>
+    </p>
+    <p>
+      <span data-lang="ca">A La Marinada el desespinam davant del client, amb la delicadesa que mereix el producte. Acompanyat de les nostres patates i un raig d'oli. Res més cal.</span>
+      <span data-lang="es">En La Marinada lo desespinamos delante del cliente, con la delicadeza que merece el producto. Acompañado de nuestras patatas y un chorrito de aceite. Nada más hace falta.</span>
+      <span data-lang="en">At La Marinada we debone it in front of you, with the care the product deserves. Served with our potatoes and a drizzle of olive oil. Nothing more is needed.</span>
+    </p>
+
+    <div class="stat-row">
+      <div class="stat">
+        <div class="stat-num">+25</div>
+        <div class="stat-label">
+          <span data-lang="ca">Anys a Sitges</span>
+          <span data-lang="es">Años en Sitges</span>
+          <span data-lang="en">Years in Sitges</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4.6★</div>
+        <div class="stat-label">
+          <span data-lang="ca">Google / TripAdvisor</span>
+          <span data-lang="es">Google / TripAdvisor</span>
+          <span data-lang="en">Google / TripAdvisor</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">
+          <span data-lang="ca">Producte fresc</span>
+          <span data-lang="es">Producto fresco</span>
+          <span data-lang="en">Fresh produce</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="carta.html" class="btn btn-primary">
+      <span data-lang="ca">Veure la carta completa</span>
+      <span data-lang="es">Ver la carta completa</span>
+      <span data-lang="en">See the full menu</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FEATURED DISHES (dark)
+════════════════════════════════════════ -->
+<section class="featured">
+  <div class="section-header">
+    <p class="section-eyebrow">
+      <span data-lang="ca">De la llotja a la taula</span>
+      <span data-lang="es">De la lonja a la mesa</span>
+      <span data-lang="en">From market to table</span>
+    </p>
+    <h2 class="section-title">
+      <span data-lang="ca">Plats imprescindibles</span>
+      <span data-lang="es">Platos imprescindibles</span>
+      <span data-lang="en">Must-try dishes</span>
+    </h2>
+    <p class="section-sub">
+      <span data-lang="ca">El que la gent repeteix. El que no podeu marxar sense provar.</span>
+      <span data-lang="es">Lo que la gente repite. Lo que no podéis iros sin probar.</span>
+      <span data-lang="en">What people come back for. What you cannot leave without trying.</span>
+    </p>
+  </div>
+
+  <div class="featured-grid">
+
+    <!-- Cigalas -->
+    <a href="carta.html" class="feat-card">
+      <div class="feat-card-img">🦞
+        <span class="feat-badge">
+          <span data-lang="ca">Temporada</span>
+          <span data-lang="es">Temporada</span>
+          <span data-lang="en">In season</span>
+        </span>
+      </div>
+      <div class="feat-card-body">
+        <div class="feat-card-name">
+          <span data-lang="ca">Cigales a la planxa</span>
+          <span data-lang="es">Cigalas a la plancha</span>
+          <span data-lang="en">Grilled Norway lobster</span>
+        </div>
+        <p class="feat-card-desc">
+          <span data-lang="ca">Cigales fresques de llotja, a la planxa amb un punt de sal. Recomanades per tothom que les ha provat.</span>
+          <span data-lang="es">Cigalas frescas de lonja, a la plancha con un punto de sal. Recomendadas por todos los que las han probado.</span>
+          <span data-lang="en">Fresh market Norway lobster, pan-grilled with a touch of salt. Recommended by everyone who has tried them.</span>
+        </p>
+        <div class="feat-card-footer">
+          <span class="feat-card-link">
+            <span data-lang="ca">Veure a la carta</span>
+            <span data-lang="es">Ver en la carta</span>
+            <span data-lang="en">See in menu</span>
+            →
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Zamburiñas -->
+    <a href="carta.html" class="feat-card">
+      <div class="feat-card-img">🐚</div>
+      <div class="feat-card-body">
+        <div class="feat-card-name">
+          <span data-lang="ca">Zamburinyes gratinades</span>
+          <span data-lang="es">Zamburiñas gratinadas</span>
+          <span data-lang="en">Gratinated queen scallops</span>
+        </div>
+        <p class="feat-card-desc">
+          <span data-lang="ca">Un dels entradors més aplaudits de la casa. Fresques, amb un toc de forn que les fa inoblidables.</span>
+          <span data-lang="es">Uno de los entrantes más aplaudidos de la casa. Frescas, con un toque de horno que las hace inolvidables.</span>
+          <span data-lang="en">One of the house's most praised starters. Fresh, with a touch of oven heat that makes them unforgettable.</span>
+        </p>
+        <div class="feat-card-footer">
+          <span class="feat-card-link">
+            <span data-lang="ca">Veure a la carta</span>
+            <span data-lang="es">Ver en la carta</span>
+            <span data-lang="en">See in menu</span>
+            →
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Xató -->
+    <a href="carta.html" class="feat-card">
+      <div class="feat-card-img">🥗
+        <span class="feat-badge" style="background:var(--ocean);color:var(--foam)">
+          <span data-lang="ca">Clàssic</span>
+          <span data-lang="es">Clásico</span>
+          <span data-lang="en">Classic</span>
+        </span>
+      </div>
+      <div class="feat-card-body">
+        <div class="feat-card-name">
+          <span data-lang="ca">Xató</span>
+          <span data-lang="es">Xató</span>
+          <span data-lang="en">Xató salad</span>
+        </div>
+        <p class="feat-card-desc">
+          <span data-lang="ca">L'ensalada tradicional de Sitges i el Penedès. Escarola, bacallà, anxoves i una salsa de fruits secs i pebre.</span>
+          <span data-lang="es">La ensalada tradicional de Sitges y el Penedés. Escarola, bacalao, anchoas y una salsa de frutos secos y pimiento.</span>
+          <span data-lang="en">The traditional salad of Sitges and Penedès. Endive, salt cod, anchovies and a nut-and-pepper sauce.</span>
+        </p>
+        <div class="feat-card-footer">
+          <span class="feat-card-link">
+            <span data-lang="ca">Veure a la carta</span>
+            <span data-lang="es">Ver en la carta</span>
+            <span data-lang="en">See in menu</span>
+            →
+          </span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="featured-cta">
+    <a href="carta.html" class="btn btn-outline">
+      <span data-lang="ca">Carta completa</span>
+      <span data-lang="es">Carta completa</span>
+      <span data-lang="en">Full menu</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     RESERVE BAND
+════════════════════════════════════════ -->
+<section class="reserve-band" id="reserva">
+  <div class="reserve-band-content">
+    <h2>
+      <span data-lang="ca">Reserveu taula</span>
+      <span data-lang="es">Reserve su mesa</span>
+      <span data-lang="en">Reserve your table</span>
+    </h2>
+    <p>
+      <span data-lang="ca">El local és petit i el producte limitat. Recomanem reservar amb antelació.</span>
+      <span data-lang="es">El local es pequeño y el producto limitado. Recomendamos reservar con antelación.</span>
+      <span data-lang="en">The restaurant is small and produce is limited. We recommend booking ahead.</span>
+    </p>
+
+    <div class="reserve-info">
+      <div class="reserve-item">
+        <div class="reserve-item-label">
+          <span data-lang="ca">Horari</span>
+          <span data-lang="es">Horario</span>
+          <span data-lang="en">Hours</span>
+        </div>
+        <div class="reserve-item-value">
+          <span data-lang="ca">Dv–Dg: 13:30–16:00 / 20:30–23:00</span>
+          <span data-lang="es">Vi–Do: 13:30–16:00 / 20:30–23:00</span>
+          <span data-lang="en">Fri–Sun: 1:30–4pm / 8:30–11pm</span>
+        </div>
+      </div>
+      <div class="reserve-item">
+        <div class="reserve-item-label">
+          <span data-lang="ca">Telèfon</span>
+          <span data-lang="es">Teléfono</span>
+          <span data-lang="en">Phone</span>
+        </div>
+        <!-- EDIT: replace with real phone -->
+        <div class="reserve-item-value">+34 938 11 08 01</div>
+      </div>
+      <div class="reserve-item">
+        <div class="reserve-item-label">
+          <span data-lang="ca">Adreça</span>
+          <span data-lang="es">Dirección</span>
+          <span data-lang="en">Address</span>
+        </div>
+        <div class="reserve-item-value">C. Rafael Llopart, 49<br>08870 Sitges</div>
+      </div>
+    </div>
+
+    <a href="tel:+34938110801" class="btn btn-primary">
+      <span data-lang="ca">Trucar per reservar</span>
+      <span data-lang="es">Llamar para reservar</span>
+      <span data-lang="en">Call to reserve</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+════════════════════════════════════════ -->
+<section class="contact-wrap" id="contacte">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <h3>
+        <span data-lang="ca">Trobar-nos</span>
+        <span data-lang="es">Encontrarnos</span>
+        <span data-lang="en">Find us</span>
+      </h3>
+
+      <div class="info-block">
+        <div class="info-label">
+          <span data-lang="ca">Adreça</span>
+          <span data-lang="es">Dirección</span>
+          <span data-lang="en">Address</span>
+        </div>
+        <div class="info-value">
+          Carrer de Rafael Llopart, 49<br>
+          08870 Sitges, Barcelona
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">
+          <span data-lang="ca">Telèfon</span>
+          <span data-lang="es">Teléfono</span>
+          <span data-lang="en">Phone</span>
+        </div>
+        <div class="info-value">
+          <a href="tel:+34938110801">+34 938 11 08 01</a>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">
+          <span data-lang="ca">Xarxes</span>
+          <span data-lang="es">Redes sociales</span>
+          <span data-lang="en">Social</span>
+        </div>
+        <div class="info-value">
+          <a href="https://www.instagram.com/lamarinada.sitges" target="_blank">@lamarinada.sitges</a>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">
+          <span data-lang="ca">Com arribar</span>
+          <span data-lang="es">Cómo llegar</span>
+          <span data-lang="en">Getting there</span>
+        </div>
+        <div class="info-value">
+          <span data-lang="ca">Primera línia de mar, Platja de Sant Sebastià. 10 min a peu de l'estació de Sitges.</span>
+          <span data-lang="es">Primera línea de mar, Playa de San Sebastián. 10 min a pie de la estación de Sitges.</span>
+          <span data-lang="en">Seafront, San Sebastián beach. 10 min walk from Sitges station.</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="info-label" style="margin-bottom:1.2rem">
+        <span data-lang="ca">Horaris</span>
+        <span data-lang="es">Horarios</span>
+        <span data-lang="en">Opening hours</span>
+      </div>
+      <table class="hours-table">
+        <tr>
+          <td>
+            <span data-lang="ca">Dilluns – Dijous</span>
+            <span data-lang="es">Lunes – Jueves</span>
+            <span data-lang="en">Monday – Thursday</span>
+          </td>
+          <td class="closed">
+            <span data-lang="ca">Tancat</span>
+            <span data-lang="es">Cerrado</span>
+            <span data-lang="en">Closed</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span data-lang="ca">Divendres</span>
+            <span data-lang="es">Viernes</span>
+            <span data-lang="en">Friday</span>
+          </td>
+          <td>13:30–16:00 / 20:30–23:00</td>
+        </tr>
+        <tr>
+          <td>
+            <span data-lang="ca">Dissabte</span>
+            <span data-lang="es">Sábado</span>
+            <span data-lang="en">Saturday</span>
+          </td>
+          <td>13:30–16:00 / 20:30–23:00</td>
+        </tr>
+        <tr>
+          <td>
+            <span data-lang="ca">Diumenge</span>
+            <span data-lang="es">Domingo</span>
+            <span data-lang="en">Sunday</span>
+          </td>
+          <td>13:30–16:00</td>
+        </tr>
+      </table>
+
+      <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-style:italic;color:var(--stone);margin-top:1.5rem;line-height:1.6">
+        <span data-lang="ca">* Horari d'estiu: de dimarts a diumenge. Consulteu disponibilitat fora de temporada.</span>
+        <span data-lang="es">* Horario de verano: de martes a domingo. Consultad disponibilidad fuera de temporada.</span>
+        <span data-lang="en">* Summer hours: Tuesday to Sunday. Check availability outside season.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="main-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">La Marinada</div>
+        <div class="footer-brand-sub">Sitges · Primera línia de mar</div>
+        <p>
+          <span data-lang="ca">Cuina vasco-catalana. Peix fresc de llotja a la brasa. Un restaurant petit amb molt de cor, enfront del mar.</span>
+          <span data-lang="es">Cocina vasco-catalana. Pescado fresco de lonja a la brasa. Un restaurante pequeño con mucho corazón, frente al mar.</span>
+          <span data-lang="en">Basque-Catalan cuisine. Fresh market fish over the grill. A small restaurant with a big heart, facing the sea.</span>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>
+          <span data-lang="ca">Navegació</span>
+          <span data-lang="es">Navegación</span>
+          <span data-lang="en">Navigation</span>
+        </h5>
+        <a href="index.html">
+          <span data-lang="ca">Inici</span>
+          <span data-lang="es">Inicio</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <a href="carta.html">
+          <span data-lang="ca">La Carta</span>
+          <span data-lang="es">La Carta</span>
+          <span data-lang="en">Menu</span>
+        </a>
+        <a href="#reserva">
+          <span data-lang="ca">Reservar</span>
+          <span data-lang="es">Reservar</span>
+          <span data-lang="en">Reserve</span>
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h5>
+          <span data-lang="ca">Horari</span>
+          <span data-lang="es">Horario</span>
+          <span data-lang="en">Hours</span>
+        </h5>
+        <p>
+          <span data-lang="ca">Dv–Dg: 13:30–16:00</span>
+          <span data-lang="es">Vi–Do: 13:30–16:00</span>
+          <span data-lang="en">Fri–Sun: 1:30–4pm</span>
+        </p>
+        <p>
+          <span data-lang="ca">Dv–Ds: 20:30–23:00</span>
+          <span data-lang="es">Vi–Sá: 20:30–23:00</span>
+          <span data-lang="en">Fri–Sat: 8:30–11pm</span>
+        </p>
+        <p>
+          <span data-lang="ca">Dl–Dj: Tancat</span>
+          <span data-lang="es">Lu–Ju: Cerrado</span>
+          <span data-lang="en">Mon–Thu: Closed</span>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>
+          <span data-lang="ca">Contacte</span>
+          <span data-lang="es">Contacto</span>
+          <span data-lang="en">Contact</span>
+        </h5>
+        <a href="tel:+34938110801">+34 938 11 08 01</a>
+        <a href="https://www.instagram.com/lamarinada.sitges" target="_blank">@lamarinada.sitges</a>
+        <p>C. Rafael Llopart, 49<br>08870 Sitges</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 La Marinada · Sitges</span>
+      <span>
+        <span data-lang="ca">Tots els drets reservats</span>
+        <span data-lang="es">Todos los derechos reservados</span>
+        <span data-lang="en">All rights reserved</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="global.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+/* ============================================================
+   CARTA.CSS — La Marinada · Sitges
+   Menu/carta page styles
+   ============================================================ */
+
+/* ─── PAGE HEADER ─── */
+.page-header {
+  padding: 9rem 4rem 5rem;
+  background: linear-gradient(170deg, var(--deep) 0%, #0A1D32 60%, var(--navy) 100%);
+  text-align: center; position: relative; overflow: hidden;
+}
+
+.page-header::after {
+  content: ''; position: absolute;
+  bottom: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(to right, transparent, var(--gold), var(--wave), transparent);
+}
+
+/* subtle wave bg */
+.page-header::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 120%, rgba(40,120,181,.2) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.page-header-eyebrow {
+  font-family: 'Raleway', sans-serif;
+  font-size: .62rem; font-weight: 700; letter-spacing: .32em;
+  text-transform: uppercase; color: var(--gold);
+  margin-bottom: 1rem; position: relative; z-index: 1;
+}
+
+.page-header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 400; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--foam); line-height: 1;
+  margin-bottom: .6rem; position: relative; z-index: 1;
+}
+
+.page-header-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem; font-style: italic;
+  color: var(--stone); position: relative; z-index: 1;
+}
+
+/* ─── STICKY CATEGORY NAV ─── */
+.cat-nav {
+  position: sticky; top: 60px; z-index: 400;
+  background: rgba(14,34,53,.97);
+  backdrop-filter: blur(8px);
+  padding: .8rem 4rem;
+  display: flex; gap: .5rem; flex-wrap: nowrap;
+  overflow-x: auto;
+  border-bottom: 1px solid rgba(139,188,217,.08);
+}
+
+.cat-nav::-webkit-scrollbar { height: 2px; }
+.cat-nav::-webkit-scrollbar-thumb { background: var(--gold); }
+
+.cat-btn {
+  background: none; border: 1px solid rgba(139,188,217,.15);
+  color: rgba(232,243,251,.55); font-family: 'Raleway', sans-serif;
+  font-size: .6rem; font-weight: 700; letter-spacing: .15em;
+  text-transform: uppercase; padding: .45rem 1rem;
+  cursor: pointer; transition: all .2s; border-radius: 1px;
+  white-space: nowrap; display: flex; align-items: center; gap: .4rem;
+}
+
+.cat-btn:hover, .cat-btn.active {
+  background: var(--gold); border-color: var(--gold);
+  color: var(--deep);
+}
+
+/* ─── MAIN WRAP ─── */
+.carta-wrap {
+  max-width: 1400px; margin: 0 auto;
+  padding: 4rem 4rem 7rem;
+  background: var(--white);
+}
+
+.back-link {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: .62rem; font-weight: 700; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--stone);
+  text-decoration: none; margin-bottom: 3rem; transition: color .2s;
+}
+
+.back-link:hover { color: var(--ocean); }
+
+/* ─── CATEGORY SECTION ─── */
+.cat-section {
+  margin-bottom: 5rem;
+  scroll-margin-top: 130px;
+  display: none; /* shown via lang system */
+}
+
+.lang-ca .cat-section[data-lang="ca"],
+.lang-es .cat-section[data-lang="es"],
+.lang-en .cat-section[data-lang="en"] { display: block; }
+
+.cat-header {
+  display: flex; align-items: center; gap: 1.2rem;
+  margin-bottom: 2rem; padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(26,74,114,.15);
+}
+
+.cat-icon { font-size: 2rem; }
+
+.cat-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  font-weight: 400; letter-spacing: .08em;
+  color: var(--ink); line-height: 1;
+}
+
+.cat-title em {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05em; font-style: italic; font-weight: 300;
+  color: var(--ocean);
+}
+
+.cat-count {
+  margin-left: auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: .58rem; font-weight: 700; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--stone);
+  background: var(--foam); padding: .28rem .75rem;
+  border: 1px solid rgba(26,74,114,.1);
+  white-space: nowrap;
+}
+
+/* ─── DISH GRID — 4 col ─── */
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+/* ─── DISH CARD ─── */
+.dish-card {
+  background: #fff;
+  border: 1px solid rgba(26,74,114,.1);
+  cursor: pointer; text-decoration: none; color: inherit;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+  display: flex; flex-direction: column; overflow: hidden;
+  animation: cardIn .4s both;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(10,30,55,.13);
+  border-color: rgba(40,120,181,.3);
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.dish-card:nth-child(1) { animation-delay: .04s; }
+.dish-card:nth-child(2) { animation-delay: .08s; }
+.dish-card:nth-child(3) { animation-delay: .12s; }
+.dish-card:nth-child(4) { animation-delay: .16s; }
+.dish-card:nth-child(5) { animation-delay: .20s; }
+.dish-card:nth-child(6) { animation-delay: .24s; }
+.dish-card:nth-child(7) { animation-delay: .28s; }
+.dish-card:nth-child(8) { animation-delay: .32s; }
+
+.dish-card-img {
+  width: 100%; aspect-ratio: 4/3;
+  background: linear-gradient(145deg, var(--navy) 0%, #0A1929 100%);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.8rem; position: relative; overflow: hidden;
+}
+
+.dish-card-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .4s;
+}
+
+.dish-card:hover .dish-card-img img { transform: scale(1.06); }
+
+.dish-card-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(7,17,28,.65) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.dish-badge {
+  position: absolute; top: .7rem; left: .7rem; z-index: 2;
+  background: var(--gold); color: var(--deep);
+  font-family: 'Raleway', sans-serif;
+  font-size: .52rem; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; padding: .2rem .55rem;
+}
+
+.dish-badge.seasonal {
+  background: var(--ocean); color: var(--foam);
+}
+
+.dish-badge.market {
+  background: rgba(7,17,28,.7); color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.dish-card-body {
+  padding: 1rem 1.1rem 1.1rem;
+  flex: 1; display: flex; flex-direction: column;
+}
+
+.dish-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 600; line-height: 1.25;
+  color: var(--ink); margin-bottom: .3rem;
+}
+
+.dish-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .88rem; font-style: italic; line-height: 1.5;
+  color: var(--stone); flex: 1; margin-bottom: .8rem;
+}
+
+.dish-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: auto;
+}
+
+.dish-price {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem; font-weight: 700; color: var(--ocean);
+}
+
+.dish-arrow {
+  width: 26px; height: 26px;
+  border: 1px solid rgba(26,74,114,.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .75rem; color: var(--stone);
+  transition: background .2s, color .2s, border-color .2s, transform .2s;
+  flex-shrink: 0;
+}
+
+.dish-card:hover .dish-arrow {
+  background: var(--ocean); color: var(--foam);
+  border-color: var(--ocean);
+  transform: translateX(2px);
+}
+
+/* ─── MARKET PRICE DISHES (price varies) ─── */
+.dish-price.market {
+  font-size: .72rem; font-family: 'Raleway', sans-serif;
+  font-weight: 600; letter-spacing: .08em;
+  color: var(--gold); text-transform: uppercase;
+}
+
+/* ─── SEPARATOR / INTRO NOTE ─── */
+.cat-note {
+  background: linear-gradient(135deg, var(--foam) 0%, #EDF5FB 100%);
+  border-left: 3px solid var(--wave);
+  padding: 1rem 1.4rem; margin-bottom: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .95rem; font-style: italic;
+  line-height: 1.6; color: #4A6070;
+}
+
+/* ─── ALLERGEN ─── */
+.allergen-note {
+  background: var(--foam);
+  border-left: 3px solid var(--gold);
+  padding: 1.2rem 1.5rem; margin-top: 4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .95rem; line-height: 1.6; color: #5A7080;
+}
+
+.allergen-note strong {
+  font-family: 'Raleway', sans-serif;
+  font-size: .62rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1200px) {
+  .dish-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .cat-nav { padding: .7rem 1.5rem; top: 56px; }
+  .carta-wrap { padding: 3rem 1.5rem 5rem; }
+  .page-header { padding: 7rem 2rem 3.5rem; }
+  .dish-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .dish-grid { grid-template-columns: 1fr; }
+}
