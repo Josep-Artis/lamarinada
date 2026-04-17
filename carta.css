@@ -53,8 +53,8 @@
   padding: .8rem 4rem;
   display: flex; gap: .5rem; flex-wrap: nowrap;
   overflow-x: auto;
-  border-bottom: 1px solid rgba(139,188,217,.1);
-  box-shadow: 0 4px 20px rgba(0,0,0,.3);
+  border-bottom: 1px solid rgba(139,188,217,.06);
+  box-shadow: 0 2px 12px rgba(0,0,0,.2);
 }
 
 .cat-nav::-webkit-scrollbar { height: 2px; }

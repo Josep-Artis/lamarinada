@@ -4,10 +4,19 @@
    ============================================================ */
 
 function scrollToCategory(id, btn) {
-  const el = document.getElementById(id);
-  if (!el) return;
+  // Find the visible section matching current language
+  const all = document.querySelectorAll('#' + id);
+  let target = null;
+  all.forEach(el => {
+    if (getComputedStyle(el).display !== 'none') target = el;
+  });
+  if (!target) return;
 
-  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const navH = (document.querySelector('.main-nav')?.offsetHeight || 60)
+             + (document.querySelector('.cat-nav')?.offsetHeight || 50)
+             + 16;
+  const top = target.getBoundingClientRect().top + window.scrollY - navH;
+  window.scrollTo({ top, behavior: 'smooth' });
 
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
@@ -28,7 +37,7 @@ function scrollToCategory(id, btn) {
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && getComputedStyle(entry.target).display !== 'none') {
         const id = entry.target.id;
         buttons.forEach(b => b.classList.remove('active'));
         if (map[id]) map[id].classList.add('active');
