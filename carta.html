@@ -12,10 +12,7 @@
 </head>
 <body class="lang-es">
 
-<!-- ═══════════════════════════════════════
-     NAV
-════════════════════════════════════════ -->
-<nav class="main-nav" id="main-nav">
+<nav class="main-nav solid" id="main-nav">
   <a href="index.html" class="nav-logo">
     <span class="nav-logo-main">La Marinada</span>
     <span class="nav-logo-sub">Sitges · Primera línia de mar</span>
@@ -23,14 +20,15 @@
   <ul class="nav-links">
     <li data-lang="ca"><a href="index.html">Inici</a></li>
     <li data-lang="ca"><a href="carta.html" class="active">La Carta</a></li>
+    <li data-lang="ca"><a href="begudes.html">Begudes</a></li>
     <li data-lang="ca"><a href="index.html#reserva">Reserva</a></li>
-
     <li data-lang="es"><a href="index.html">Inicio</a></li>
     <li data-lang="es"><a href="carta.html" class="active">La Carta</a></li>
+    <li data-lang="es"><a href="begudes.html">Bebidas</a></li>
     <li data-lang="es"><a href="index.html#reserva">Reservas</a></li>
-
     <li data-lang="en"><a href="index.html">Home</a></li>
     <li data-lang="en"><a href="carta.html" class="active">Menu</a></li>
+    <li data-lang="en"><a href="begudes.html">Drinks</a></li>
     <li data-lang="en"><a href="index.html#reserva">Reserve</a></li>
   </ul>
   <div class="lang-switcher">
@@ -40,10 +38,6 @@
   </div>
 </nav>
 
-
-<!-- ═══════════════════════════════════════
-     PAGE HEADER
-════════════════════════════════════════ -->
 <header class="page-header">
   <p class="page-header-eyebrow">🌊 La Marinada · Sitges</p>
   <h1>
@@ -58,814 +52,265 @@
   </p>
 </header>
 
-
-<!-- ═══════════════════════════════════════
-     STICKY CAT NAV
-════════════════════════════════════════ -->
 <nav class="cat-nav">
   <button class="cat-btn active" onclick="scrollToCategory('entrantes', this)">
-    🐚
-    <span data-lang="ca">Entrants</span>
-    <span data-lang="es">Entrantes</span>
-    <span data-lang="en">Starters</span>
-  </button>
-  <button class="cat-btn" onclick="scrollToCategory('pescados', this)">
-    🐟
-    <span data-lang="ca">Peixos a la Brasa</span>
-    <span data-lang="es">Pescados a la Brasa</span>
-    <span data-lang="en">Grilled Fish</span>
+    🐚 <span data-lang="ca">Per Començar</span><span data-lang="es">Para Empezar</span><span data-lang="en">Starters</span>
   </button>
   <button class="cat-btn" onclick="scrollToCategory('carnes', this)">
-    🥩
-    <span data-lang="ca">Carns</span>
-    <span data-lang="es">Carnes</span>
-    <span data-lang="en">Meats</span>
+    🥩 <span data-lang="ca">Les Nostres Carns</span><span data-lang="es">Nuestras Carnes</span><span data-lang="en">Our Meats</span>
+  </button>
+  <button class="cat-btn" onclick="scrollToCategory('pescados', this)">
+    🐟 <span data-lang="ca">Del Mar a la Taula</span><span data-lang="es">Del Mar a la Mesa</span><span data-lang="en">From Sea to Table</span>
   </button>
   <button class="cat-btn" onclick="scrollToCategory('postres', this)">
-    🍮
-    <span data-lang="ca">Postres</span>
-    <span data-lang="es">Postres</span>
-    <span data-lang="en">Desserts</span>
+    🍮 <span data-lang="ca">Postres</span><span data-lang="es">Postres</span><span data-lang="en">Desserts</span>
   </button>
 </nav>
 
-
-<!-- ═══════════════════════════════════════
-     CARTA MAIN
-════════════════════════════════════════ -->
 <main class="carta-wrap">
 
   <a href="index.html" class="back-link">
-    ← <span data-lang="ca">Tornar a l'inici</span>
-       <span data-lang="es">Volver al inicio</span>
-       <span data-lang="en">Back to home</span>
+    ← <span data-lang="ca">Tornar a l'inici</span><span data-lang="es">Volver al inicio</span><span data-lang="en">Back to home</span>
   </a>
 
-  <!-- ───────────────────────────────────
-       ENTRANTS / ENTRANTES / STARTERS
-  ─────────────────────────────────── -->
+  <!-- ═══ PER COMENÇAR CA ═══ -->
   <section class="cat-section" data-lang="ca" id="entrantes">
     <div class="cat-header">
       <span class="cat-icon">🐚</span>
-      <h2 class="cat-title">Entrants i <em>Mariscos</em></h2>
-      <span class="cat-count">9 plats</span>
+      <h2 class="cat-title">Per <em>Començar</em></h2>
+      <span class="cat-count">8 plats</span>
     </div>
-    <p class="cat-note">Producte fresc de llotja. La carta d'entrants canvia segons el mercat del dia.</p>
+    <p class="cat-note">Si tens alguna intolerància o al·lèrgia, consulta amb el servei de sala.</p>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦞<span class="dish-badge">⭐ Top</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Cigales a la Planxa</div>
-          <p class="dish-note">Fresques de llotja, punt de sal i un raig d'oli. Imprescindibles.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐚<span class="dish-badge">⭐ Top</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Zamburinyes Gratinades</div>
-          <p class="dish-note">Un dels entrants estrella. Fresques, al forn amb un toc daurat.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦪</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Cloïsses a la Planxa</div>
-          <p class="dish-note">Cloïsses fresques, obertes a la planxa. Suc natural incomparable.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐙</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Calamar Farcit</div>
-          <p class="dish-note">Casolà, farcit i cuit suau. Un clàssic de la casa.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥗<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Local</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Xató</div>
-          <p class="dish-note">L'amanida tradicional de Sitges. Escarola, bacallà, anxoves i salsa de fruits secs.</p>
-          <div class="dish-footer"><span class="dish-price">14,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Anxoves de l'Escala</div>
-          <p class="dish-note">Anxoves artesanes amb pa de pagès i tomàquet. Senzill i perfecte.</p>
-          <div class="dish-footer"><span class="dish-price">16,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥚</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Tellines al Vapor</div>
-          <p class="dish-note">Tendres i saboroses. Vapor lleuger i un raig de llimona.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦐</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Gambes a la Planxa</div>
-          <p class="dish-note">Gambes fresques de llotja, a la planxa amb all i julivert.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍋</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Amanida de la Casa</div>
-          <p class="dish-note">Amanida fresca de temporada. Lleugera i equilibrada.</p>
-          <div class="dish-footer"><span class="dish-price">10,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥗<span class="dish-badge">⭐ Casa</span></div><div class="dish-card-body"><div class="dish-name">Amanida Clàssica La Marinada</div><p class="dish-note">L'amanida de la casa. Fresca i equilibrada.</p><div class="dish-footer"><span class="dish-price">12,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥔</div><div class="dish-card-body"><div class="dish-name">Les Braves de la Casa</div><p class="dish-note">Les nostres patates braves amb salsa secreta de la casa.</p><div class="dish-footer"><span class="dish-price">9,80 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐟<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Anxoves del Cantàbric</div><p class="dish-note">Anxoves premium del Cantàbric. Intensitat i qualitat en cada filet.</p><div class="dish-footer"><span class="dish-price">17,80 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦐<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Carpaccio de Gamba de Palamós</div><p class="dish-note">Gamba de Palamós en carpaccio. Dolça, delicada i inconfusible.</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦑</div><div class="dish-card-body"><div class="dish-name">Calamars a la Romana</div><p class="dish-note">Calamars tendres arrebossats. Crujents per fora, suaus per dins.</p><div class="dish-footer"><span class="dish-price">17,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐚</div><div class="dish-card-body"><div class="dish-name">Zamburiñes de Pontevedra a la Brasa (8u)</div><p class="dish-note">Zamburiñes fresques de Pontevedra fetes a la brasa.</p><div class="dish-footer"><span class="dish-price">20,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦪</div><div class="dish-card-body"><div class="dish-name">Cloïsses en Salsa Verda</div><p class="dish-note">Cloïsses fresques amb una salsa verda aromàtica.</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍞</div><div class="dish-card-body"><div class="dish-name">Pa de Vidre amb Tomàquet</div><p class="dish-note">Pa de cristall torrat amb tomàquet i oli d'oliva verge extra.</p><div class="dish-footer"><span class="dish-price">3,75 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
+  <!-- ═══ PARA EMPEZAR ES ═══ -->
   <section class="cat-section" data-lang="es" id="entrantes">
     <div class="cat-header">
       <span class="cat-icon">🐚</span>
-      <h2 class="cat-title">Entrantes y <em>Mariscos</em></h2>
-      <span class="cat-count">9 platos</span>
+      <h2 class="cat-title">Para <em>Empezar</em></h2>
+      <span class="cat-count">8 platos</span>
     </div>
-    <p class="cat-note">Producto fresco de lonja. La carta de entrantes varía según el mercado del día.</p>
+    <p class="cat-note">Si tienes alguna intolerancia o alergia, consulta con el servicio de sala.</p>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦞<span class="dish-badge">⭐ Top</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Cigalas a la Plancha</div>
-          <p class="dish-note">Frescas de lonja, punto de sal y un chorrito de aceite. Imprescindibles.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐚<span class="dish-badge">⭐ Top</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Zamburiñas Gratinadas</div>
-          <p class="dish-note">Uno de los entrantes estrella. Frescas, al horno con un toque dorado.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦪</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Almejas a la Plancha</div>
-          <p class="dish-note">Almejas frescas, abiertas a la plancha. Jugo natural incomparable.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐙</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Calamar Relleno</div>
-          <p class="dish-note">Casero, relleno y cocido suavemente. Un clásico de la casa.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥗<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Local</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Xató</div>
-          <p class="dish-note">La ensalada tradicional de Sitges. Escarola, bacalao, anchoas y salsa de frutos secos.</p>
-          <div class="dish-footer"><span class="dish-price">14,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Anchoas de l'Escala</div>
-          <p class="dish-note">Anchoas artesanas con pan de payés y tomate. Sencillo y perfecto.</p>
-          <div class="dish-footer"><span class="dish-price">16,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥚</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Tellerinas al Vapor</div>
-          <p class="dish-note">Tiernas y sabrosas. Vapor ligero y un chorrito de limón.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦐</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Gambas a la Plancha</div>
-          <p class="dish-note">Gambas frescas de lonja, a la plancha con ajo y perejil.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍋</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Ensalada de la Casa</div>
-          <p class="dish-note">Ensalada fresca de temporada. Ligera y equilibrada.</p>
-          <div class="dish-footer"><span class="dish-price">10,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥗<span class="dish-badge">⭐ Casa</span></div><div class="dish-card-body"><div class="dish-name">Ensalada Clásica La Marinada</div><p class="dish-note">La ensalada de la casa. Fresca y equilibrada.</p><div class="dish-footer"><span class="dish-price">12,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥔</div><div class="dish-card-body"><div class="dish-name">Las Bravas de la Casa</div><p class="dish-note">Nuestras patatas bravas con salsa secreta de la casa.</p><div class="dish-footer"><span class="dish-price">9,80 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐟<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Anchoas del Cantábrico</div><p class="dish-note">Anchoas premium del Cantábrico. Intensidad y calidad en cada filete.</p><div class="dish-footer"><span class="dish-price">17,80 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦐<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Carpaccio de Gamba de Palamós</div><p class="dish-note">Gamba de Palamós en carpaccio. Dulce, delicada e inconfundible.</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦑</div><div class="dish-card-body"><div class="dish-name">Calamares a la Romana</div><p class="dish-note">Calamares tiernos rebozados. Crujientes por fuera, suaves por dentro.</p><div class="dish-footer"><span class="dish-price">17,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐚</div><div class="dish-card-body"><div class="dish-name">Zamburiñas de Pontevedra a la Parrilla (8u)</div><p class="dish-note">Zamburiñas frescas de Pontevedra a la parrilla.</p><div class="dish-footer"><span class="dish-price">20,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦪</div><div class="dish-card-body"><div class="dish-name">Almejas en Salsa Verde</div><p class="dish-note">Almejas frescas con una aromática salsa verde.</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍞</div><div class="dish-card-body"><div class="dish-name">Pan de Cristal con Tomate</div><p class="dish-note">Pan de cristal tostado con tomate y aceite de oliva virgen extra.</p><div class="dish-footer"><span class="dish-price">3,75 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
+  <!-- ═══ STARTERS EN ═══ -->
   <section class="cat-section" data-lang="en" id="entrantes">
     <div class="cat-header">
       <span class="cat-icon">🐚</span>
-      <h2 class="cat-title">Starters & <em>Seafood</em></h2>
-      <span class="cat-count">9 dishes</span>
+      <h2 class="cat-title">To <em>Start</em></h2>
+      <span class="cat-count">8 dishes</span>
     </div>
-    <p class="cat-note">Fresh market produce. Our starters change daily depending on the catch.</p>
+    <p class="cat-note">Please inform our staff of any allergies or intolerances.</p>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦞<span class="dish-badge">⭐ Top</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Norway Lobster</div>
-          <p class="dish-note">Fresh from market, a pinch of salt and olive oil. An absolute must.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐚<span class="dish-badge">⭐ Top</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Gratinated Queen Scallops</div>
-          <p class="dish-note">One of our star starters. Fresh, oven-baked to a golden finish.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦪</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Clams</div>
-          <p class="dish-note">Fresh clams, opened on the plancha. Natural juices, unbeatable.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐙</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Stuffed Squid</div>
-          <p class="dish-note">Home-made, stuffed and gently cooked. A house classic.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥗<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Local</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Xató Salad</div>
-          <p class="dish-note">The traditional salad of Sitges. Endive, salt cod, anchovies and nut sauce.</p>
-          <div class="dish-footer"><span class="dish-price">14,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Anchovies from l'Escala</div>
-          <p class="dish-note">Artisan anchovies with country bread and tomato. Simple and perfect.</p>
-          <div class="dish-footer"><span class="dish-price">16,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥚</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Steamed Wedge Clams</div>
-          <p class="dish-note">Tender and full of flavour. Light steam and a squeeze of lemon.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🦐</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Prawns</div>
-          <p class="dish-note">Fresh market prawns, pan-grilled with garlic and parsley.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍋</div>
-        <div class="dish-card-body">
-          <div class="dish-name">House Salad</div>
-          <p class="dish-note">Seasonal fresh salad. Light and well-balanced.</p>
-          <div class="dish-footer"><span class="dish-price">10,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥗<span class="dish-badge">⭐ House</span></div><div class="dish-card-body"><div class="dish-name">La Marinada Classic Salad</div><p class="dish-note">Our house salad. Fresh and balanced.</p><div class="dish-footer"><span class="dish-price">12,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥔</div><div class="dish-card-body"><div class="dish-name">House Patatas Bravas</div><p class="dish-note">Our bravas with a secret house sauce.</p><div class="dish-footer"><span class="dish-price">9,80 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐟<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Cantabrian Anchovies</div><p class="dish-note">Premium anchovies from the Cantabrian Sea. Intensity in every fillet.</p><div class="dish-footer"><span class="dish-price">17,80 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦐<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Palamós Prawn Carpaccio</div><p class="dish-note">Palamós prawn carpaccio. Sweet, delicate and unmistakable.</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦑</div><div class="dish-card-body"><div class="dish-name">Fried Squid Rings</div><p class="dish-note">Tender battered squid. Crispy outside, soft inside.</p><div class="dish-footer"><span class="dish-price">17,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐚</div><div class="dish-card-body"><div class="dish-name">Grilled Pontevedra Scallops (8u)</div><p class="dish-note">Fresh scallops from Pontevedra, grilled to perfection.</p><div class="dish-footer"><span class="dish-price">20,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦪</div><div class="dish-card-body"><div class="dish-name">Clams in Green Sauce</div><p class="dish-note">Fresh clams in an aromatic green sauce.</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍞</div><div class="dish-card-body"><div class="dish-name">Crystal Bread with Tomato</div><p class="dish-note">Toasted crystal bread with tomato and extra virgin olive oil.</p><div class="dish-footer"><span class="dish-price">3,75 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-
-  <!-- ───────────────────────────────────
-       PEIXOS / PESCADOS / GRILLED FISH
-  ─────────────────────────────────── -->
-  <section class="cat-section" data-lang="ca" id="pescados">
-    <div class="cat-header">
-      <span class="cat-icon">🐟</span>
-      <h2 class="cat-title">Peixos a la <em>Brasa</em></h2>
-      <span class="cat-count">6 plats</span>
-    </div>
-    <p class="cat-note">Tota la carta de peix depèn de la llotja del dia. Els peixos es desespinen davant del client.</p>
-    <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐡<span class="dish-badge">⭐ Estrella</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Rodaballo a la Brasa</div>
-          <p class="dish-note">El rei de la carta. Salvatge, fresc, desepinat davant del client. Inoblidable.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Llobarro a la Brasa</div>
-          <p class="dish-note">Llobarro salvatge de llotja. Pell cruixent, carn blanca i suculenta.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐠</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Llenguado a la Planxa</div>
-          <p class="dish-note">Deliciós i fi. Planxa suau, mantega i llimona. Tot un plaer.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Rap a la Brasa</div>
-          <p class="dish-note">Carn blanca i ferma. A la brasa amb all i julivert.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐠</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Besugo a la Brasa</div>
-          <p class="dish-note">Sencer, a la brasa. Un dels preferits dels clients habituals.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟<span class="dish-badge seasonal">Temporada</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Peix del Dia</div>
-          <p class="dish-note">Selecció diària de la llotja. Preguntar al servei per la disponibilitat.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <section class="cat-section" data-lang="es" id="pescados">
-    <div class="cat-header">
-      <span class="cat-icon">🐟</span>
-      <h2 class="cat-title">Pescados a la <em>Brasa</em></h2>
-      <span class="cat-count">6 platos</span>
-    </div>
-    <p class="cat-note">Toda la carta de pescado depende de la lonja del día. Los pescados se desespinán delante del cliente.</p>
-    <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐡<span class="dish-badge">⭐ Estrella</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Rodaballo a la Brasa</div>
-          <p class="dish-note">El rey de la carta. Salvaje, fresco, desespinado delante del cliente. Inolvidable.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Lubina a la Brasa</div>
-          <p class="dish-note">Lubina salvaje de lonja. Piel crujiente, carne blanca y jugosa.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐠</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Lenguado a la Plancha</div>
-          <p class="dish-note">Delicioso y fino. Plancha suave, mantequilla y limón. Todo un placer.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Rape a la Brasa</div>
-          <p class="dish-note">Carne blanca y firme. A la brasa con ajo y perejil.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐠</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Besugo a la Brasa</div>
-          <p class="dish-note">Entero, a la brasa. Uno de los favoritos de los clientes habituales.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟<span class="dish-badge seasonal">Temporada</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Pescado del Día</div>
-          <p class="dish-note">Selección diaria de lonja. Preguntar al servicio por disponibilidad.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <section class="cat-section" data-lang="en" id="pescados">
-    <div class="cat-header">
-      <span class="cat-icon">🐟</span>
-      <h2 class="cat-title">Fish <em>over the Grill</em></h2>
-      <span class="cat-count">6 dishes</span>
-    </div>
-    <p class="cat-note">All fish depends on the daily market catch. Fish are deboned tableside in front of the guest.</p>
-    <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐡<span class="dish-badge">⭐ Star dish</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Turbot</div>
-          <p class="dish-note">The king of our menu. Wild, fresh, deboned tableside. Unforgettable.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Sea Bass</div>
-          <p class="dish-note">Wild sea bass from market. Crispy skin, white and succulent flesh.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐠</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Sole on the Plancha</div>
-          <p class="dish-note">Delicate and refined. Gentle heat, butter and lemon. Sheer pleasure.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Monkfish</div>
-          <p class="dish-note">Firm white flesh. Grilled with garlic and parsley.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐠</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Sea Bream</div>
-          <p class="dish-note">Whole, over the grill. One of our regulars' favourites.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐟<span class="dish-badge seasonal">Seasonal</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Fish of the Day</div>
-          <p class="dish-note">Daily selection from the fish market. Ask our staff for availability.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-
-  <!-- ───────────────────────────────────
-       CARNS / MEATS
-  ─────────────────────────────────── -->
+  <!-- ═══ CARNS CA ═══ -->
   <section class="cat-section" data-lang="ca" id="carnes">
     <div class="cat-header">
       <span class="cat-icon">🥩</span>
-      <h2 class="cat-title"><em>Carns</em> a la Brasa</h2>
+      <h2 class="cat-title">Les Nostres <em>Carns</em></h2>
       <span class="cat-count">3 plats</span>
     </div>
-    <p class="cat-note">Per als que prefereixen la carn. Qualitat de producte al mateix nivell que els nostres peixos.</p>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥩</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Chuletón a la Brasa</div>
-          <p class="dish-note">Chuletón de vaca madurada, a la brasa. Per als amants de la carn.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🫀</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Entrecot a la Brasa</div>
-          <p class="dish-note">Entrecot de vedella, punt perfecte de brasa. Amb patates al caliu.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐷</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Costelles de Xai</div>
-          <p class="dish-note">Costelles de xai de qualitat, a la brasa. Tendres i aromàtiques.</p>
-          <div class="dish-footer"><span class="dish-price market">Preu mercat</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥩<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Filet de Vaca Vella amb Salsa al Foie</div><p class="dish-note">Solomillo de vaca vella (maduració 45 dies) amb salsa al foie. Tendresa excepcional.</p><div class="dish-footer"><span class="dish-price">33,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🔥</div><div class="dish-card-body"><div class="dish-name">Filet de Vaca Vella a la Brasa</div><p class="dish-note">Solomillo de vaca vella (maduració 45 dies) a la brasa. El punt exacte.</p><div class="dish-footer"><span class="dish-price">28,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍖</div><div class="dish-card-body"><div class="dish-name">Galta Ibèrica a Baixa Temperatura</div><p class="dish-note">Carrillera ibèrica cuita lentament a baixa temperatura. Melosa i intensa.</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
+  <!-- ═══ CARNES ES ═══ -->
   <section class="cat-section" data-lang="es" id="carnes">
     <div class="cat-header">
       <span class="cat-icon">🥩</span>
-      <h2 class="cat-title"><em>Carnes</em> a la Brasa</h2>
+      <h2 class="cat-title">Nuestras <em>Carnes</em></h2>
       <span class="cat-count">3 platos</span>
     </div>
-    <p class="cat-note">Para los que prefieren la carne. Calidad de producto al mismo nivel que nuestros pescados.</p>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥩</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Chuletón a la Brasa</div>
-          <p class="dish-note">Chuletón de vaca madurada, a la brasa. Para los amantes de la carne.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🫀</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Entrecot a la Brasa</div>
-          <p class="dish-note">Entrecot de ternera, punto perfecto de brasa. Con patatas al caliu.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐷</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Costillas de Cordero</div>
-          <p class="dish-note">Costillas de cordero de calidad, a la brasa. Tiernas y aromáticas.</p>
-          <div class="dish-footer"><span class="dish-price market">Precio mercado</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥩<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Solomillo de Vaca Vieja con Salsa al Foie</div><p class="dish-note">Solomillo de vaca vieja (maduración 45 días) con salsa al foie. Ternura excepcional.</p><div class="dish-footer"><span class="dish-price">33,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🔥</div><div class="dish-card-body"><div class="dish-name">Solomillo de Vaca Vieja a la Brasa</div><p class="dish-note">Solomillo de vaca vieja (maduración 45 días) a la brasa. El punto exacto.</p><div class="dish-footer"><span class="dish-price">28,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍖</div><div class="dish-card-body"><div class="dish-name">Carrillera Ibérica a Baja Temperatura</div><p class="dish-note">Carrillera ibérica cocinada lentamente a baja temperatura. Melosa e intensa.</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
+  <!-- ═══ MEATS EN ═══ -->
   <section class="cat-section" data-lang="en" id="carnes">
     <div class="cat-header">
       <span class="cat-icon">🥩</span>
-      <h2 class="cat-title"><em>Meats</em> over the Grill</h2>
+      <h2 class="cat-title">Our <em>Meats</em></h2>
       <span class="cat-count">3 dishes</span>
     </div>
-    <p class="cat-note">For those who prefer meat. Same quality standards as our fish dishes.</p>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🥩</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Aged T-bone</div>
-          <p class="dish-note">Aged beef chuletón, over the grill. For serious meat lovers.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🫀</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Grilled Entrecôte</div>
-          <p class="dish-note">Beef entrecôte, perfectly grilled. Served with ember-roasted potatoes.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🐷</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Lamb Cutlets</div>
-          <p class="dish-note">Quality lamb cutlets, over the grill. Tender and fragrant.</p>
-          <div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥩<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Aged Cow Sirloin with Foie Sauce</div><p class="dish-note">45-day aged cow sirloin with foie sauce. Exceptional tenderness.</p><div class="dish-footer"><span class="dish-price">33,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🔥</div><div class="dish-card-body"><div class="dish-name">Aged Cow Sirloin over the Grill</div><p class="dish-note">45-day aged cow sirloin, grilled to perfection.</p><div class="dish-footer"><span class="dish-price">28,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍖</div><div class="dish-card-body"><div class="dish-name">Iberian Cheek at Low Temperature</div><p class="dish-note">Iberian pork cheek slow-cooked at low temperature. Silky and intense.</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
+  <!-- ═══ DEL MAR A LA TAULA CA ═══ -->
+  <section class="cat-section" data-lang="ca" id="pescados">
+    <div class="cat-header">
+      <span class="cat-icon">🐟</span>
+      <h2 class="cat-title">Del Mar <em>a la Taula</em></h2>
+      <span class="cat-count">4 plats</span>
+    </div>
+    <p class="cat-note">Els nostres peixos es fan a la graella estil Guetaria. Preu de mercat per als peixos sencers — consulta al servei de sala.</p>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img">🐟<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Turbot a la Graella estil Guetaria</div><p class="dish-note">Peça per a dues persones. Rodaballo salvatge a la graella. El rei del mar.</p><div class="dish-footer"><span class="dish-price">67,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐠<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Llobarro a la Graella estil Guetaria</div><p class="dish-note">Peça per a dues persones. Lubina fresca a la graella. Pell cruixent, carn sucosa.</p><div class="dish-footer"><span class="dish-price">65,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐡</div><div class="dish-card-body"><div class="dish-name">Llenguado a la Graella estil Guetaria</div><p class="dish-note">Llenguado fresc a la graella. Delicat i refinat.</p><div class="dish-footer"><span class="dish-price market">S/M</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦈</div><div class="dish-card-body"><div class="dish-name">Cua de Rap a la Graella estil Guetaria</div><p class="dish-note">Colita de rap a la graella. Carn ferma i saborosa.</p><div class="dish-footer"><span class="dish-price">29,00 €</span><span class="dish-arrow">→</span></div></div></a>
+    </div>
+  </section>
 
-  <!-- ───────────────────────────────────
-       POSTRES
-  ─────────────────────────────────── -->
+  <!-- ═══ DEL MAR A LA MESA ES ═══ -->
+  <section class="cat-section" data-lang="es" id="pescados">
+    <div class="cat-header">
+      <span class="cat-icon">🐟</span>
+      <h2 class="cat-title">Del Mar <em>a la Mesa</em></h2>
+      <span class="cat-count">4 platos</span>
+    </div>
+    <p class="cat-note">Nuestros pescados se hacen a la parrilla estilo Guetaria. Precio de mercado para los pescados enteros — consultar al servicio.</p>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img">🐟<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Rodaballo a la Parrilla estilo Guetaria</div><p class="dish-note">Pieza para dos personas. Rodaballo salvaje a la parrilla. El rey del mar.</p><div class="dish-footer"><span class="dish-price">67,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐠<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Lubina a la Parrilla estilo Guetaria</div><p class="dish-note">Pieza para dos personas. Lubina fresca a la parrilla. Piel crujiente, carne jugosa.</p><div class="dish-footer"><span class="dish-price">65,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐡</div><div class="dish-card-body"><div class="dish-name">Lenguado a la Parrilla estilo Guetaria</div><p class="dish-note">Lenguado fresco a la parrilla. Delicado y refinado.</p><div class="dish-footer"><span class="dish-price market">S/M</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦈</div><div class="dish-card-body"><div class="dish-name">Colita de Rape a la Parrilla estilo Guetaria</div><p class="dish-note">Colita de rape a la parrilla. Carne firme y sabrosa.</p><div class="dish-footer"><span class="dish-price">29,00 €</span><span class="dish-arrow">→</span></div></div></a>
+    </div>
+  </section>
+
+  <!-- ═══ SEA TO TABLE EN ═══ -->
+  <section class="cat-section" data-lang="en" id="pescados">
+    <div class="cat-header">
+      <span class="cat-icon">🐟</span>
+      <h2 class="cat-title">From Sea <em>to Table</em></h2>
+      <span class="cat-count">4 dishes</span>
+    </div>
+    <p class="cat-note">All our fish are grilled Guetaria style. Whole fish prices vary by market — ask our staff.</p>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img">🐟<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Grilled Turbot Guetaria Style</div><p class="dish-note">For two people. Wild turbot over the grill. The king of the sea.</p><div class="dish-footer"><span class="dish-price">67,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐠<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Grilled Sea Bass Guetaria Style</div><p class="dish-note">For two people. Fresh sea bass on the grill. Crispy skin, juicy flesh.</p><div class="dish-footer"><span class="dish-price">65,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🐡</div><div class="dish-card-body"><div class="dish-name">Grilled Dover Sole Guetaria Style</div><p class="dish-note">Fresh sole over the grill. Delicate and refined.</p><div class="dish-footer"><span class="dish-price market">Market price</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🦈</div><div class="dish-card-body"><div class="dish-name">Grilled Monkfish Tail Guetaria Style</div><p class="dish-note">Monkfish tail over the grill. Firm, flavourful flesh.</p><div class="dish-footer"><span class="dish-price">29,00 €</span><span class="dish-arrow">→</span></div></div></a>
+    </div>
+  </section>
+
+  <!-- ═══ POSTRES CA ═══ -->
   <section class="cat-section" data-lang="ca" id="postres">
     <div class="cat-header">
       <span class="cat-icon">🍮</span>
       <h2 class="cat-title"><em>Postres</em></h2>
-      <span class="cat-count">4 postres</span>
+      <span class="cat-count">7 postres</span>
     </div>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍮<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Clàssic</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Crema Catalana</div>
-          <p class="dish-note">La recepta de la casa. Crema suau, caramel cruixent. El millor final.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍰</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Pastís de Formatge</div>
-          <p class="dish-note">Casolà, amb salsa de fruites del bosc. Molt recomanat pels clients.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍫</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Tiramisú</div>
-          <p class="dish-note">Casolà, fet cada dia. Cremós i equilibrat.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍨</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Gelat del Dia</div>
-          <p class="dish-note">Selecció diària. Preguntar al servei.</p>
-          <div class="dish-footer"><span class="dish-price">5,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍪<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Casolà</span></div><div class="dish-card-body"><div class="dish-name">Crumble</div><p class="dish-note">Base de galeta cruixent, gelat de vainilla, xocolata desfeta i caramel casolà.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍰<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Casolà</span></div><div class="dish-card-body"><div class="dish-name">Tarta de Formatge</div><p class="dish-note">Amb terra cruixent, sirope de maduixa i fruits vermells.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍫<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Casolà</span></div><div class="dish-card-body"><div class="dish-name">Catànies de Vilafranca · Trufes</div><p class="dish-note">Catànies de Vilafranca i trufes de xocolata casolanes.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍨<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Casolà</span></div><div class="dish-card-body"><div class="dish-name">Gelat de Torró amb Xocolata Desfeta</div><p class="dish-note">Gelat de torró, xocolata desfeta calenta i terra cruixent.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍋</div><div class="dish-card-body"><div class="dish-name">Sorbet de Llimona</div><p class="dish-note">Refrescant i cítric. Disponible amb licor — el típic amb cava.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥥</div><div class="dish-card-body"><div class="dish-name">Sorbet de Coco</div><p class="dish-note">Suau i tropical. Disponible amb licor a petició.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍊</div><div class="dish-card-body"><div class="dish-name">Sorbet de Mandarina</div><p class="dish-note">Dolç i aromàtic. Disponible amb licor a petició.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
+  <!-- ═══ POSTRES ES ═══ -->
   <section class="cat-section" data-lang="es" id="postres">
     <div class="cat-header">
       <span class="cat-icon">🍮</span>
       <h2 class="cat-title"><em>Postres</em></h2>
-      <span class="cat-count">4 postres</span>
+      <span class="cat-count">7 postres</span>
     </div>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍮<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Clásico</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Crema Catalana</div>
-          <p class="dish-note">La receta de la casa. Crema suave, caramelo crujiente. El mejor final.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍰</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Tarta de Queso</div>
-          <p class="dish-note">Casera, con salsa de frutos del bosque. Muy recomendada por los clientes.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍫</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Tiramisú</div>
-          <p class="dish-note">Casero, hecho cada día. Cremoso y equilibrado.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍨</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Helado del Día</div>
-          <p class="dish-note">Selección diaria. Preguntar al servicio.</p>
-          <div class="dish-footer"><span class="dish-price">5,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍪<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Casero</span></div><div class="dish-card-body"><div class="dish-name">Crumble</div><p class="dish-note">Base de galleta crujiente, helado de vainilla, chocolate deshecho y caramelo casero.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍰<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Casero</span></div><div class="dish-card-body"><div class="dish-name">Tarta de Queso</div><p class="dish-note">Acompañada de tierra crujiente, sirope de frambuesa y frutos rojos.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍫<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Casero</span></div><div class="dish-card-body"><div class="dish-name">Catànies de Vilafranca · Trufas</div><p class="dish-note">Catànies de Vilafranca y trufas de chocolate hechas en casa.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍨<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Casero</span></div><div class="dish-card-body"><div class="dish-name">Helado de Turrón con Chocolate Deshecho</div><p class="dish-note">Helado de turrón con chocolate deshecho caliente y tierra crujiente.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍋</div><div class="dish-card-body"><div class="dish-name">Sorbete de Limón</div><p class="dish-note">Refrescante y cítrico. Disponible con licor — el típico con cava.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥥</div><div class="dish-card-body"><div class="dish-name">Sorbete de Coco</div><p class="dish-note">Suave y tropical. Disponible con licor a petición.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍊</div><div class="dish-card-body"><div class="dish-name">Sorbete de Mandarina</div><p class="dish-note">Dulce y aromático. Disponible con licor a petición.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
+  <!-- ═══ DESSERTS EN ═══ -->
   <section class="cat-section" data-lang="en" id="postres">
     <div class="cat-header">
       <span class="cat-icon">🍮</span>
       <h2 class="cat-title"><em>Desserts</em></h2>
-      <span class="cat-count">4 desserts</span>
+      <span class="cat-count">7 desserts</span>
     </div>
     <div class="dish-grid">
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍮<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">Classic</span></div>
-        <div class="dish-card-body">
-          <div class="dish-name">Crema Catalana</div>
-          <p class="dish-note">The house recipe. Silky cream, crisp caramel. The perfect ending.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍰</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Cheesecake</div>
-          <p class="dish-note">Home-made, with wild berry sauce. Highly recommended by our guests.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍫</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Tiramisù</div>
-          <p class="dish-note">Home-made fresh daily. Creamy and perfectly balanced.</p>
-          <div class="dish-footer"><span class="dish-price">7,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
-      <a href="#" class="dish-card">
-        <div class="dish-card-img">🍨</div>
-        <div class="dish-card-body">
-          <div class="dish-name">Ice Cream of the Day</div>
-          <p class="dish-note">Daily selection. Ask our staff.</p>
-          <div class="dish-footer"><span class="dish-price">5,00 €</span><span class="dish-arrow">→</span></div>
-        </div>
-      </a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍪<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">House</span></div><div class="dish-card-body"><div class="dish-name">Crumble</div><p class="dish-note">Crunchy biscuit base, vanilla ice cream, melted chocolate and house-made caramel.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍰<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">House</span></div><div class="dish-card-body"><div class="dish-name">Cheesecake</div><p class="dish-note">Served with crunchy crumble, raspberry syrup and mixed berries.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍫<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">House</span></div><div class="dish-card-body"><div class="dish-name">Catànies de Vilafranca · Truffles</div><p class="dish-note">Catànies from Vilafranca and house-made chocolate truffles.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍨<span class="dish-badge" style="background:var(--ocean);color:var(--foam)">House</span></div><div class="dish-card-body"><div class="dish-name">Turrón Ice Cream with Melted Chocolate</div><p class="dish-note">Turrón ice cream with warm melted chocolate and crunchy crumble.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍋</div><div class="dish-card-body"><div class="dish-name">Lemon Sorbet</div><p class="dish-note">Refreshing and citrusy. Available with a liqueur — the classic with cava.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🥥</div><div class="dish-card-body"><div class="dish-name">Coconut Sorbet</div><p class="dish-note">Smooth and tropical. Available with a liqueur on request.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img">🍊</div><div class="dish-card-body"><div class="dish-name">Mandarin Sorbet</div><p class="dish-note">Sweet and aromatic. Available with a liqueur on request.</p><div class="dish-footer"><span class="dish-price">— €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-
-  <!-- ALLERGEN NOTE -->
   <div class="allergen-note">
     <strong data-lang="ca">Al·lèrgens i avisos:</strong>
     <strong data-lang="es">Alérgenos y avisos:</strong>
     <strong data-lang="en">Allergens & notes:</strong>
-    <span data-lang="ca"> La carta de peix i marisc depèn de la disponibilitat de la llotja. Els preus de mercat es consulten al servei. Si tens al·lèrgies o intoleràncies, fes-ho saber al nostre equip.</span>
-    <span data-lang="es"> La carta de pescado y marisco depende de la disponibilidad de lonja. Los precios de mercado se consultan al servicio. Si tienes alergias o intolerancias, comunícaselo a nuestro equipo.</span>
-    <span data-lang="en"> Fish and seafood availability depends on the daily market. Market prices are available from our staff. Please inform us of any allergies or dietary requirements.</span>
+    <span data-lang="ca"> La carta de peix depèn de la disponibilitat de la llotja. Si tens al·lèrgies o intoleràncies, fes-ho saber al nostre equip. Els preus marcats amb — s'actualitzen aviat.</span>
+    <span data-lang="es"> La carta de pescado depende de la disponibilidad de lonja. Si tienes alergias o intolerancias, comunícaselo a nuestro equipo. Los precios marcados con — se actualizan próximamente.</span>
+    <span data-lang="en"> Fish availability depends on the daily market. Please inform us of any allergies. Prices marked — will be updated shortly.</span>
   </div>
 
 </main>
 
-
-<!-- ═══════════════════════════════════════
-     FOOTER
-════════════════════════════════════════ -->
 <footer class="main-footer">
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
         <div class="footer-brand-name">La Marinada</div>
         <div class="footer-brand-sub">Sitges · Primera línia de mar</div>
-        <p>
-          <span data-lang="ca">Cuina vasco-catalana. Peix fresc de llotja a la brasa.</span>
-          <span data-lang="es">Cocina vasco-catalana. Pescado fresco de lonja a la brasa.</span>
-          <span data-lang="en">Basque-Catalan cuisine. Fresh market fish over the grill.</span>
-        </p>
+        <p><span data-lang="ca">Cuina vasco-catalana. Peix fresc de llotja a la brasa.</span><span data-lang="es">Cocina vasco-catalana. Pescado fresco de lonja a la brasa.</span><span data-lang="en">Basque-Catalan cuisine. Fresh market fish over the grill.</span></p>
       </div>
       <div class="footer-col">
-        <h5>
-          <span data-lang="ca">Carta</span>
-          <span data-lang="es">Carta</span>
-          <span data-lang="en">Menu</span>
-        </h5>
-        <a href="#entrantes">
-          <span data-lang="ca">Entrants</span>
-          <span data-lang="es">Entrantes</span>
-          <span data-lang="en">Starters</span>
-        </a>
-        <a href="#pescados">
-          <span data-lang="ca">Peixos</span>
-          <span data-lang="es">Pescados</span>
-          <span data-lang="en">Fish</span>
-        </a>
-        <a href="#carnes">
-          <span data-lang="ca">Carns</span>
-          <span data-lang="es">Carnes</span>
-          <span data-lang="en">Meats</span>
-        </a>
-        <a href="#postres">
-          <span data-lang="ca">Postres</span>
-          <span data-lang="es">Postres</span>
-          <span data-lang="en">Desserts</span>
-        </a>
+        <h5><span data-lang="ca">Carta</span><span data-lang="es">Carta</span><span data-lang="en">Menu</span></h5>
+        <a href="#entrantes"><span data-lang="ca">Per Començar</span><span data-lang="es">Para Empezar</span><span data-lang="en">Starters</span></a>
+        <a href="#carnes"><span data-lang="ca">Les Nostres Carns</span><span data-lang="es">Nuestras Carnes</span><span data-lang="en">Our Meats</span></a>
+        <a href="#pescados"><span data-lang="ca">Del Mar a la Taula</span><span data-lang="es">Del Mar a la Mesa</span><span data-lang="en">From Sea to Table</span></a>
+        <a href="#postres"><span data-lang="ca">Postres</span><span data-lang="es">Postres</span><span data-lang="en">Desserts</span></a>
       </div>
       <div class="footer-col">
-        <h5>
-          <span data-lang="ca">Horari</span>
-          <span data-lang="es">Horario</span>
-          <span data-lang="en">Hours</span>
-        </h5>
-        <p>Vi–Do: 13:30–16:00</p>
-        <p>Vi–Sá: 20:30–23:00</p>
-        <p>
-          <span data-lang="ca">Dl–Dj: Tancat</span>
-          <span data-lang="es">Lu–Ju: Cerrado</span>
-          <span data-lang="en">Mon–Thu: Closed</span>
-        </p>
+        <h5><span data-lang="ca">Horari</span><span data-lang="es">Horario</span><span data-lang="en">Hours</span></h5>
+        <p>Vi–Do: 13:30–16:00</p><p>Vi–Sá: 20:30–23:00</p>
+        <p><span data-lang="ca">Dl–Dj: Tancat</span><span data-lang="es">Lu–Ju: Cerrado</span><span data-lang="en">Mon–Thu: Closed</span></p>
       </div>
       <div class="footer-col">
-        <h5>
-          <span data-lang="ca">Contacte</span>
-          <span data-lang="es">Contacto</span>
-          <span data-lang="en">Contact</span>
-        </h5>
+        <h5><span data-lang="ca">Contacte</span><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></h5>
         <a href="tel:+34938110801">+34 938 11 08 01</a>
         <a href="https://www.instagram.com/lamarinada.sitges" target="_blank">@lamarinada.sitges</a>
         <p>C. Rafael Llopart, 49<br>Sitges</p>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 La Marinada · Sitges</span>
-      <span>
-        <span data-lang="ca">Tots els drets reservats</span>
-        <span data-lang="es">Todos los derechos reservados</span>
-        <span data-lang="en">All rights reserved</span>
-      </span>
-    </div>
-  </div>
-</footer>
-
-<script src="global.js"></script>
-<script src="carta.js"></script>
-</body>
-</html>

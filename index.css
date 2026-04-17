@@ -14,29 +14,29 @@
 .hero-bg {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 100% 60% at 50% 110%, rgba(26,74,114,.7) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 30% at 75% 30%, rgba(40,120,181,.12) 0%, transparent 55%),
-    linear-gradient(170deg, #030A12 0%, #07111C 30%, #0B1E32 65%, #0E2235 100%);
+    radial-gradient(ellipse 80% 55% at 50% 105%, rgba(26,74,114,.55) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 25% at 75% 30%, rgba(40,120,181,.08) 0%, transparent 55%),
+    linear-gradient(165deg, #040D17 0%, #07111C 35%, #0A1929 65%, #0D1F31 100%);
 }
 
-/* Animated horizontal shimmer — evokes sea horizon */
+/* Horizon shimmer — very subtle, only 3 lines */
 .horizon-lines { position: absolute; inset: 0; pointer-events: none; }
 
 .h-line {
-  position: absolute; left: -5%; right: -5%; height: 1px;
+  position: absolute; left: 0; right: 0; height: 1px;
   background: linear-gradient(to right,
     transparent 0%,
-    rgba(139,188,217,.08) 20%,
-    rgba(40,120,181,.25) 50%,
-    rgba(139,188,217,.08) 80%,
+    rgba(139,188,217,.04) 25%,
+    rgba(40,120,181,.12) 50%,
+    rgba(139,188,217,.04) 75%,
     transparent 100%
   );
-  animation: shimmer var(--dur,10s) var(--delay,0s) ease-in-out infinite alternate;
+  animation: shimmer var(--dur,12s) var(--delay,0s) ease-in-out infinite alternate;
 }
 
 @keyframes shimmer {
-  0%   { transform: translateY(0) scaleX(.92); opacity: .25; }
-  100% { transform: translateY(var(--drift,-25px)) scaleX(1.08); opacity: .9; }
+  0%   { transform: translateY(0); opacity: .2; }
+  100% { transform: translateY(var(--drift,-20px)); opacity: .6; }
 }
 
 /* Floating foam dots */
@@ -44,15 +44,15 @@
 
 .dot {
   position: absolute; border-radius: 50%;
-  background: rgba(139,188,217,.5);
+  background: rgba(139,188,217,.45);
   animation: floatDot var(--dur,12s) var(--delay,0s) ease-in-out infinite;
   opacity: 0;
 }
 
 @keyframes floatDot {
   0%   { opacity: 0; transform: translateY(0) translateX(0); }
-  15%  { opacity: .5; }
-  85%  { opacity: .2; }
+  15%  { opacity: .45; }
+  85%  { opacity: .15; }
   100% { opacity: 0; transform: translateY(-75vh) translateX(var(--drift,20px)); }
 }
 
@@ -91,7 +91,7 @@
   font-size: clamp(3rem, 9.5vw, 7.5rem);
   font-weight: 400; letter-spacing: .14em; text-transform: uppercase;
   line-height: .9; color: var(--foam);
-  text-shadow: 0 0 80px rgba(40,120,181,.3);
+  text-shadow: 0 2px 40px rgba(7,17,28,.8), 0 0 80px rgba(40,120,181,.2);
   animation: fadeUp 1s .3s both;
 }
 
@@ -100,8 +100,9 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(1.4rem, 4vw, 3.2rem);
   font-weight: 300; font-style: italic; letter-spacing: .04em;
-  text-transform: none; color: rgba(139,188,217,.75);
+  text-transform: none; color: rgba(139,188,217,.8);
   margin-top: .4em;
+  text-shadow: 0 1px 20px rgba(7,17,28,.6);
 }
 
 .hero-sep {
@@ -111,10 +112,10 @@
 
 .hero-sep-line {
   width: 70px; height: 1px;
-  background: linear-gradient(to right, transparent, rgba(139,188,217,.3));
+  background: linear-gradient(to right, transparent, rgba(139,188,217,.35));
 }
 
-.hero-sep-line.r { background: linear-gradient(to left, transparent, rgba(139,188,217,.3)); }
+.hero-sep-line.r { background: linear-gradient(to left, transparent, rgba(139,188,217,.35)); }
 
 .hero-sep-diamond {
   width: 6px; height: 6px;
@@ -125,8 +126,9 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(.95rem, 2.3vw, 1.2rem);
   font-style: italic; letter-spacing: .06em;
-  color: rgba(139,188,217,.6); margin-bottom: 2.8rem;
+  color: rgba(139,188,217,.75); margin-bottom: 2.8rem;
   animation: fadeUp 1s .62s both;
+  text-shadow: 0 1px 12px rgba(7,17,28,.7);
 }
 
 .hero-cta {
@@ -144,12 +146,12 @@
 .hero-scroll-text {
   font-family: 'Raleway', sans-serif;
   font-size: .56rem; font-weight: 600; letter-spacing: .25em;
-  text-transform: uppercase; color: rgba(139,188,217,.35);
+  text-transform: uppercase; color: rgba(139,188,217,.45);
 }
 
 .hero-scroll-line {
   width: 1px; height: 42px;
-  background: linear-gradient(to bottom, rgba(139,188,217,.35), transparent);
+  background: linear-gradient(to bottom, rgba(139,188,217,.4), transparent);
   animation: scrollBlink 2.5s ease-in-out infinite;
 }
 
@@ -214,7 +216,6 @@
   position: relative; overflow: hidden;
 }
 
-/* Decorative double border */
 .spec-img-frame::before {
   content: ''; position: absolute; inset: 1rem; z-index: 2;
   border: 1px solid rgba(196,146,42,.2); pointer-events: none;
@@ -234,7 +235,6 @@
   text-transform: uppercase; font-weight: 600;
 }
 
-/* "Since" badge */
 .spec-badge {
   position: absolute; bottom: -1.8rem; right: -2rem; z-index: 3;
   background: var(--deep); border: 1px solid rgba(196,146,42,.3);
@@ -410,7 +410,7 @@
 .reserve-band::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
   background:
-    radial-gradient(ellipse 60% 80% at 50% 120%, rgba(7,17,28,.5) 0%, transparent 65%);
+    radial-gradient(ellipse 60% 80% at 50% 120%, rgba(7,17,28,.45) 0%, transparent 65%);
 }
 
 .reserve-band-content { position: relative; z-index: 1; }
@@ -425,7 +425,7 @@
 .reserve-band p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem; font-style: italic;
-  color: rgba(232,243,251,.7); margin-bottom: 2.5rem;
+  color: rgba(232,243,251,.8); margin-bottom: 2.5rem;
 }
 
 .reserve-band .reserve-info {
@@ -433,9 +433,7 @@
   flex-wrap: wrap; margin-bottom: 2.5rem;
 }
 
-.reserve-item {
-  text-align: center;
-}
+.reserve-item { text-align: center; }
 
 .reserve-item-label {
   font-family: 'Raleway', sans-serif;

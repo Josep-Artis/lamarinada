@@ -1,30 +1,40 @@
 /* ============================================================
    CARTA.JS — La Marinada · Sitges
-   Category nav scroll + intersection highlight
+   Category nav scroll + active highlighting
    ============================================================ */
 
 function scrollToCategory(id, btn) {
   const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  if (!el) return;
+
+  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
 }
 
+// Intersection observer — highlight cat-btn as you scroll
 (function initObserver() {
-  const ids  = ['entrantes', 'pescados', 'carnes', 'postres'];
-  const btns = document.querySelectorAll('.cat-btn');
+  const sections = document.querySelectorAll('.cat-section');
+  const buttons  = document.querySelectorAll('.cat-btn');
+  if (!sections.length || !buttons.length) return;
 
-  const sections = [];
-  ids.forEach(id => document.querySelectorAll('#' + id).forEach(el => sections.push(el)));
+  const map = {};
+  buttons.forEach(btn => {
+    const fn = btn.getAttribute('onclick') || '';
+    const m  = fn.match(/'([^']+)'/);
+    if (m) map[m[1]] = btn;
+  });
 
-  const obs = new IntersectionObserver(entries => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const idx = ids.indexOf(entry.target.id);
-      if (idx < 0) return;
-      btns.forEach((b, i) => b.classList.toggle('active', i === idx));
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        buttons.forEach(b => b.classList.remove('active'));
+        if (map[id]) map[id].classList.add('active');
+      }
     });
-  }, { rootMargin: '-25% 0px -65% 0px' });
+  }, { threshold: 0.25, rootMargin: '-100px 0px -55% 0px' });
 
-  sections.forEach(el => obs.observe(el));
+  sections.forEach(s => observer.observe(s));
 })();

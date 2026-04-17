@@ -16,11 +16,10 @@
   background: linear-gradient(to right, transparent, var(--gold), var(--wave), transparent);
 }
 
-/* subtle wave bg */
 .page-header::before {
   content: ''; position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 70% 50% at 50% 120%, rgba(40,120,181,.2) 0%, transparent 65%);
+    radial-gradient(ellipse 70% 50% at 50% 120%, rgba(40,120,181,.15) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -42,26 +41,28 @@
 .page-header-sub {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.05rem; font-style: italic;
-  color: var(--stone); position: relative; z-index: 1;
+  color: var(--mist); position: relative; z-index: 1;
+  opacity: .9;
 }
 
 /* ─── STICKY CATEGORY NAV ─── */
 .cat-nav {
   position: sticky; top: 60px; z-index: 400;
-  background: rgba(14,34,53,.97);
-  backdrop-filter: blur(8px);
+  background: rgba(7,17,28,.98);  /* solid — no más transparencias raras */
+  backdrop-filter: blur(10px);
   padding: .8rem 4rem;
   display: flex; gap: .5rem; flex-wrap: nowrap;
   overflow-x: auto;
-  border-bottom: 1px solid rgba(139,188,217,.08);
+  border-bottom: 1px solid rgba(139,188,217,.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,.3);
 }
 
 .cat-nav::-webkit-scrollbar { height: 2px; }
 .cat-nav::-webkit-scrollbar-thumb { background: var(--gold); }
 
 .cat-btn {
-  background: none; border: 1px solid rgba(139,188,217,.15);
-  color: rgba(232,243,251,.55); font-family: 'Raleway', sans-serif;
+  background: none; border: 1px solid rgba(139,188,217,.2);
+  color: rgba(232,243,251,.65); font-family: 'Raleway', sans-serif;
   font-size: .6rem; font-weight: 700; letter-spacing: .15em;
   text-transform: uppercase; padding: .45rem 1rem;
   cursor: pointer; transition: all .2s; border-radius: 1px;
@@ -94,7 +95,7 @@
 .cat-section {
   margin-bottom: 5rem;
   scroll-margin-top: 130px;
-  display: none; /* shown via lang system */
+  display: none;
 }
 
 .lang-ca .cat-section[data-lang="ca"],
@@ -132,7 +133,7 @@
   white-space: nowrap;
 }
 
-/* ─── DISH GRID — 4 col ─── */
+/* ─── DISH GRID ─── */
 .dish-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -248,7 +249,6 @@
   transform: translateX(2px);
 }
 
-/* ─── MARKET PRICE DISHES (price varies) ─── */
 .dish-price.market {
   font-size: .72rem; font-family: 'Raleway', sans-serif;
   font-weight: 600; letter-spacing: .08em;

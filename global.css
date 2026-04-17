@@ -1,44 +1,41 @@
-l · CSS
-Copiar
-
 /* ============================================================
    GLOBAL.CSS — La Marinada · Sitges
    Variables, reset, nav, footer, shared utilities
    ============================================================ */
- 
+
 :root {
-  --deep:     #07111C;   /* azul noche */
-  --navy:     #0E2235;   /* azul marino oscuro */
-  --ocean:    #1A4A72;   /* azul océano */
-  --wave:     #2878B5;   /* azul vivo */
-  --mist:     #8BBCD9;   /* azul claro */
-  --foam:     #E8F3FB;   /* espuma */
+  --deep:     #07111C;
+  --navy:     #0E2235;
+  --ocean:    #1A4A72;
+  --wave:     #2878B5;
+  --mist:     #8BBCD9;
+  --foam:     #E8F3FB;
   --white:    #F8FBFE;
-  --gold:     #C4922A;   /* dorado bronce */
+  --gold:     #C4922A;
   --gold-lt:  #DDB85A;
-  --sand:     #EDE0C8;   /* arena */
-  --stone:    #7A92A8;   /* piedra azulada */
-  --ink:      #1C2B38;   /* casi negro azulado */
+  --sand:     #EDE0C8;
+  --stone:    #7A92A8;
+  --ink:      #1C2B38;
 }
- 
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
- 
+
 body {
   background: var(--white);
   color: var(--ink);
   font-family: 'Cormorant Garamond', Georgia, serif;
   overflow-x: hidden;
 }
- 
-/* Grain overlay */
+
+/* Grain overlay — subtle */
 body::before {
   content: '';
   position: fixed; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
-  pointer-events: none; z-index: 999; opacity: .7;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.018'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 999; opacity: .5;
 }
- 
+
 /* ─── NAV ─── */
 nav.main-nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 500;
@@ -46,133 +43,141 @@ nav.main-nav {
   padding: 1.4rem 4rem;
   transition: background .4s, padding .3s, box-shadow .4s;
 }
- 
+
 nav.main-nav.transparent {
-  background: linear-gradient(to bottom, rgba(7,17,28,.85) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(7,17,28,.9) 0%, rgba(7,17,28,.4) 70%, transparent 100%);
 }
- 
+
 nav.main-nav.solid {
-  background: rgba(7,17,28,.97);
+  background: rgba(7,17,28,.98);
   box-shadow: 0 2px 30px rgba(0,0,0,.4);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 }
- 
+
 nav.main-nav.scrolled {
-  background: rgba(7,17,28,.97) !important;
+  background: rgba(7,17,28,.98) !important;
   padding: 1rem 4rem;
   box-shadow: 0 2px 30px rgba(0,0,0,.4);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 }
- 
+
 .nav-logo { text-decoration: none; line-height: 1; }
- 
+
 .nav-logo-main {
   font-family: 'Cinzel', serif;
   font-size: 1.25rem; font-weight: 700;
   letter-spacing: .18em; text-transform: uppercase;
   color: var(--foam); display: block;
 }
- 
+
 .nav-logo-sub {
   font-family: 'Cormorant Garamond', serif;
-  font-size: .72rem; font-style: italic; letter-spacing: .1em;
-  color: var(--mist); opacity: .75; display: block;
-  margin-top: .1rem;
+  font-size: .75rem; font-style: italic; letter-spacing: .08em;
+  color: var(--mist); opacity: .9; display: block;
+  margin-top: .15rem;
 }
- 
+
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
- 
+
 .nav-links a {
   font-family: 'Raleway', sans-serif;
   font-size: .65rem; font-weight: 600; letter-spacing: .2em;
-  text-transform: uppercase; color: rgba(232,243,251,.65);
+  text-transform: uppercase; color: rgba(232,243,251,.85);
   text-decoration: none; position: relative; padding-bottom: 3px;
   transition: color .2s;
+  text-shadow: 0 1px 6px rgba(0,0,0,.5);
 }
- 
+
 .nav-links a::after {
   content: ''; position: absolute; bottom: 0; left: 0;
   width: 0; height: 1px; background: var(--gold);
   transition: width .3s;
 }
- 
+
 .nav-links a:hover, .nav-links a.active { color: var(--gold-lt); }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
- 
+
+/* When nav is solid (carta page / scrolled) — links fully bright */
+nav.main-nav.solid .nav-links a,
+nav.main-nav.scrolled .nav-links a {
+  color: rgba(232,243,251,.9);
+  text-shadow: none;
+}
+
 .lang-switcher { display: flex; gap: .5rem; }
- 
+
 .lang-switcher button {
-  background: none; border: 1px solid rgba(232,243,251,.2);
-  color: rgba(232,243,251,.55); font-family: 'Raleway', sans-serif;
+  background: none; border: 1px solid rgba(232,243,251,.25);
+  color: rgba(232,243,251,.7); font-family: 'Raleway', sans-serif;
   font-size: .6rem; font-weight: 600; letter-spacing: .1em;
   text-transform: uppercase; padding: .28rem .6rem;
   cursor: pointer; transition: all .2s; border-radius: 1px;
 }
- 
+
 .lang-switcher button:hover,
 .lang-switcher button.active {
   background: var(--gold); border-color: var(--gold); color: var(--deep);
 }
- 
+
 /* ─── FOOTER ─── */
 footer.main-footer {
   background: var(--deep);
   padding: 5rem 4rem 2.5rem;
   border-top: 1px solid rgba(139,188,217,.08);
 }
- 
+
 .footer-inner {
   max-width: 1200px; margin: 0 auto;
 }
- 
+
 .footer-top {
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 4rem; padding-bottom: 3rem;
   border-bottom: 1px solid rgba(139,188,217,.08);
   margin-bottom: 2rem;
 }
- 
+
 .footer-brand-name {
   font-family: 'Cinzel', serif;
   font-size: 1.3rem; font-weight: 700; letter-spacing: .15em;
   text-transform: uppercase; color: var(--foam);
 }
- 
+
 .footer-brand-sub {
   font-family: 'Cormorant Garamond', serif;
   font-size: .85rem; font-style: italic;
   color: var(--mist); margin-bottom: 1rem;
 }
- 
+
 .footer-brand p {
   font-family: 'Cormorant Garamond', serif;
   font-size: .95rem; line-height: 1.7;
   color: var(--stone); max-width: 260px;
 }
- 
+
 .footer-col h5 {
   font-family: 'Raleway', sans-serif;
   font-size: .6rem; font-weight: 700; letter-spacing: .22em;
   text-transform: uppercase; color: var(--gold);
   margin-bottom: 1.2rem;
 }
- 
+
 .footer-col p, .footer-col a {
   font-family: 'Cormorant Garamond', serif;
   font-size: .95rem; color: var(--stone);
   line-height: 1.9; text-decoration: none; display: block;
   transition: color .2s;
 }
- 
+
 .footer-col a:hover { color: var(--foam); }
- 
+
 .footer-bottom {
   display: flex; justify-content: space-between; align-items: center;
   font-family: 'Raleway', sans-serif;
   font-size: .6rem; font-weight: 500; letter-spacing: .12em;
   text-transform: uppercase; color: rgba(122,146,168,.35);
 }
- 
+
 /* ─── BUTTONS ─── */
 .btn {
   font-family: 'Raleway', sans-serif;
@@ -182,29 +187,29 @@ footer.main-footer {
   transition: all .25s; cursor: pointer; border: none;
   display: inline-block;
 }
- 
+
 .btn-primary {
   background: var(--gold); color: var(--deep);
   box-shadow: 0 4px 20px rgba(196,146,42,.25);
 }
- 
+
 .btn-primary:hover {
   background: var(--gold-lt);
   box-shadow: 0 6px 28px rgba(196,146,42,.45);
   transform: translateY(-2px);
 }
- 
+
 .btn-outline {
   background: transparent;
-  border: 1px solid rgba(232,243,251,.3);
+  border: 1px solid rgba(232,243,251,.4);
   color: var(--foam);
 }
- 
+
 .btn-outline:hover {
   border-color: var(--gold-lt); color: var(--gold-lt);
   transform: translateY(-2px);
 }
- 
+
 /* ─── LANG SYSTEM ─── */
 [data-lang] { display: none; }
 .lang-ca [data-lang="ca"],
@@ -213,7 +218,7 @@ footer.main-footer {
 .lang-ca .nav-links [data-lang="ca"],
 .lang-es .nav-links [data-lang="es"],
 .lang-en .nav-links [data-lang="en"] { display: flex; }
- 
+
 /* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
   nav.main-nav, nav.main-nav.scrolled { padding: 1rem 1.5rem; }
@@ -222,7 +227,7 @@ footer.main-footer {
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; gap: .5rem; text-align: center; }
 }
- 
+
 @media (max-width: 600px) {
   .footer-top { grid-template-columns: 1fr; }
 }

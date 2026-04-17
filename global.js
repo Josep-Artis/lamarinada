@@ -1,41 +1,48 @@
-S
-Copiar
-
 /* ============================================================
    GLOBAL.JS — La Marinada · Sitges
-   Language switcher + nav scroll
+   Nav scroll behavior + language switcher
    ============================================================ */
- 
-function setLang(lang) {
-  document.body.className = 'lang-' + lang;
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-lbtn]').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lbtn === lang);
-  });
-  sessionStorage.setItem('marinada-lang', lang);
-}
- 
-(function init() {
-  const saved = sessionStorage.getItem('marinada-lang') || 'es';
-  setLang(saved);
-})();
- 
+
+// ─── NAV SCROLL ───
 (function initNav() {
   const nav = document.getElementById('main-nav');
   if (!nav) return;
- 
+
+  // Pages without hero (carta, begudes) start solid — don't change on scroll
   const isTransparent = nav.classList.contains('transparent');
- 
-  // Pages without transparent hero (e.g. carta) get a permanent solid background
-  if (!isTransparent) {
-    nav.classList.add('solid');
-    return;
+  if (!isTransparent) return;
+
+  function onScroll() {
+    if (window.scrollY > 60) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
   }
- 
-  // Hero pages: fade from transparent to solid on scroll
-  function check() {
-    nav.classList.toggle('scrolled', window.scrollY > 70);
-  }
-  window.addEventListener('scroll', check, { passive: true });
-  check();
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+// ─── LANGUAGE SWITCHER ───
+function setLang(lang) {
+  document.body.className = document.body.className
+    .replace(/lang-\w+/, '') + ' lang-' + lang;
+
+  // Update active button
+  document.querySelectorAll('[data-lbtn]').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lbtn === lang);
+  });
+
+  // Persist
+  try { localStorage.setItem('lm-lang', lang); } catch(e) {}
+}
+
+// Restore saved language
+(function restoreLang() {
+  try {
+    const saved = localStorage.getItem('lm-lang');
+    if (saved && ['ca','es','en'].includes(saved)) setLang(saved);
+    else setLang('es');
+  } catch(e) { setLang('es'); }
 })();

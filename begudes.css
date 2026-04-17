@@ -1,0 +1,78 @@
+/* ============================================================
+   BEGUDES.CSS — La Marinada · Sitges
+   Drinks / wine page styles
+   ============================================================ */
+
+/* Override cat-section for beg-section — always block within lang system */
+.beg-section { margin-bottom: 4rem; scroll-margin-top: 130px; }
+
+/* ─── WINE LIST ─── */
+.wine-list {
+  max-width: 780px;
+  border-top: 1px solid rgba(26,74,114,.1);
+}
+
+.wine-region {
+  font-family: 'Raleway', sans-serif;
+  font-size: .6rem; font-weight: 700; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--gold);
+  padding: 1.2rem 0 .5rem;
+  border-top: 1px solid rgba(26,74,114,.07);
+  margin-top: .5rem;
+}
+
+.wine-region:first-child { border-top: none; margin-top: 0; }
+
+.wine-item {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 1rem;
+  padding: .75rem 0;
+  border-bottom: 1px solid rgba(26,74,114,.07);
+  transition: background .15s;
+}
+
+.wine-item:hover { background: rgba(26,74,114,.03); padding-left: .5rem; }
+
+.wine-info {
+  display: flex; flex-direction: column; gap: .2rem;
+  flex: 1;
+}
+
+.wine-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--ink); line-height: 1.2;
+}
+
+.wine-grape {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .88rem; font-style: italic;
+  color: var(--stone); line-height: 1.4;
+}
+
+.wine-price {
+  font-family: 'Cinzel', serif;
+  font-size: .95rem; font-weight: 700;
+  color: var(--ocean);
+  white-space: nowrap; flex-shrink: 0;
+}
+
+/* Premium / highlight variants */
+.wine-item--highlight .wine-name { color: var(--ocean); }
+.wine-item--highlight .wine-price { color: var(--ocean); }
+
+.wine-item--premium {
+  background: linear-gradient(135deg, rgba(196,146,42,.04) 0%, transparent 100%);
+  padding-left: .75rem;
+  border-left: 2px solid var(--gold);
+}
+
+.wine-item--premium .wine-name { color: var(--ink); }
+.wine-item--premium .wine-price { color: var(--gold); }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 600px) {
+  .wine-list { max-width: 100%; }
+  .wine-item { flex-wrap: wrap; gap: .3rem; }
+  .wine-price { margin-top: .2rem; }
+}
