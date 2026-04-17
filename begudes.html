@@ -53,7 +53,6 @@
   </p>
 </header>
 
-<!-- STICKY NAV -->
 <nav class="cat-nav">
   <button class="cat-btn active" onclick="scrollToCategory('vi-blanc', this)">
     🥂 <span data-lang="ca">Vi Blanc</span><span data-lang="es">Vino Blanco</span><span data-lang="en">White Wine</span>
@@ -62,13 +61,13 @@
     🍷 <span data-lang="ca">Vi Negre</span><span data-lang="es">Vino Tinto</span><span data-lang="en">Red Wine</span>
   </button>
   <button class="cat-btn" onclick="scrollToCategory('vi-rosat', this)">
-    🌸 <span data-lang="ca">Vi Rosat</span><span data-lang="es">Vino Rosado</span><span data-lang="en">Rosé Wine</span>
+    🌸 <span data-lang="ca">Vi Rosat</span><span data-lang="es">Vino Rosado</span><span data-lang="en">Rosé</span>
   </button>
   <button class="cat-btn" onclick="scrollToCategory('cava', this)">
     🍾 <span data-lang="ca">Cava & Champagne</span><span data-lang="es">Cava & Champagne</span><span data-lang="en">Cava & Champagne</span>
   </button>
   <button class="cat-btn" onclick="scrollToCategory('refrescos', this)">
-    🥤 <span data-lang="ca">Refrescos & Aigües</span><span data-lang="es">Refrescos & Aguas</span><span data-lang="en">Soft Drinks & Water</span>
+    🥤 <span data-lang="ca">Refrescos & Aigües</span><span data-lang="es">Refrescos & Aguas</span><span data-lang="en">Soft Drinks</span>
   </button>
 </nav>
 
@@ -78,282 +77,178 @@
     ← <span data-lang="ca">Tornar a la carta</span><span data-lang="es">Volver a la carta</span><span data-lang="en">Back to menu</span>
   </a>
 
-  <!-- ══════════════════════════
-       VI BLANC
-  ═══════════════════════════ -->
-  <section class="cat-section beg-section" data-lang="ca" id="vi-blanc">
-    <div class="cat-header">
-      <span class="cat-icon">🥂</span>
-      <h2 class="cat-title"><em>Vi Blanc</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Mas Cabellut</span><span class="wine-grape">Chardonnay</span></div><span class="wine-price">20,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Bosc Negre</span><span class="wine-grape">Xarel·lo 100% — Fermentat en barrica</span></div><span class="wine-price">32,50 €</span></div>
-
-      <div class="wine-region">Montsant</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Acústic</span><span class="wine-grape">Garnatxa i Macabeu</span></div><span class="wine-price">21,00 €</span></div>
-
-      <div class="wine-region">Vins de Cerdanya (Llívia)</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Dneu</span><span class="wine-grape">Sauvignon Blanc</span></div><span class="wine-price">31,50 €</span></div>
-
-      <div class="wine-region">Rueda</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Jose Pariente Verdejo</span><span class="wine-grape">Verdejo 100%</span></div><span class="wine-price">20,50 €</span></div>
-
-      <div class="wine-region">Ribeiro</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Ramón do Casar</span><span class="wine-grape">Godello 100% — Fermentat en barrica 6 mesos</span></div><span class="wine-price">22,50 €</span></div>
-
-      <div class="wine-region">Ries Baixas</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">La Trucha</span><span class="wine-grape">Albariño 100%</span></div><span class="wine-price">22,00 €</span></div>
-
-      <div class="wine-region">Txakoli de Àlava</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Astobiza</span><span class="wine-grape">Hondarrabi Zuri i Hondarrabi Zuri Zerratie</span></div><span class="wine-price">20,00 €</span></div>
+  <!-- ═══ VI BLANC CA ═══ -->
+  <section class="cat-section" data-lang="ca" id="vi-blanc">
+    <div class="cat-header"><span class="cat-icon">🥂</span><h2 class="cat-title">Vi <em>Blanc</em></h2><span class="cat-count">8 vins</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Mas Cabellut</div><p class="dish-note">Penedès · Chardonnay</p><div class="dish-footer"><span class="dish-price">20,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge">Barrica</span></div><div class="dish-card-body"><div class="dish-name">Bosc Negre</div><p class="dish-note">Penedès · Xarel·lo 100% — Fermentat en barrica</p><div class="dish-footer"><span class="dish-price">32,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Acústic</div><p class="dish-note">Montsant · Garnatxa i Macabeu</p><div class="dish-footer"><span class="dish-price">21,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Dneu</div><p class="dish-note">Vins de Cerdanya · Sauvignon Blanc</p><div class="dish-footer"><span class="dish-price">31,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Jose Pariente Verdejo</div><p class="dish-note">Rueda · Verdejo 100%</p><div class="dish-footer"><span class="dish-price">20,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge">Barrica</span></div><div class="dish-card-body"><div class="dish-name">Ramón do Casar</div><p class="dish-note">Ribeiro · Godello 100% — 6 mesos en barrica</p><div class="dish-footer"><span class="dish-price">22,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">La Trucha</div><p class="dish-note">Rías Baixas · Albariño 100%</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Astobiza</div><p class="dish-note">Txakoli de Àlava · Hondarrabi Zuri</p><div class="dish-footer"><span class="dish-price">20,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="es" id="vi-blanc">
-    <div class="cat-header">
-      <span class="cat-icon">🥂</span>
-      <h2 class="cat-title"><em>Vino Blanco</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Mas Cabellut</span><span class="wine-grape">Chardonnay</span></div><span class="wine-price">20,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Bosc Negre</span><span class="wine-grape">Xarel·lo 100% — Fermentado en barrica</span></div><span class="wine-price">32,50 €</span></div>
-
-      <div class="wine-region">Montsant</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Acústic</span><span class="wine-grape">Garnacha y Macabeo</span></div><span class="wine-price">21,00 €</span></div>
-
-      <div class="wine-region">Vins de Cerdanya (Llívia)</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Dneu</span><span class="wine-grape">Sauvignon Blanc</span></div><span class="wine-price">31,50 €</span></div>
-
-      <div class="wine-region">Rueda</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Jose Pariente Verdejo</span><span class="wine-grape">Verdejo 100%</span></div><span class="wine-price">20,50 €</span></div>
-
-      <div class="wine-region">Ribeiro</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Ramón do Casar</span><span class="wine-grape">Godello 100% — Fermentado en barrica 6 meses</span></div><span class="wine-price">22,50 €</span></div>
-
-      <div class="wine-region">Rías Baixas</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">La Trucha</span><span class="wine-grape">Albariño 100%</span></div><span class="wine-price">22,00 €</span></div>
-
-      <div class="wine-region">Txakoli de Álava</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Astobiza</span><span class="wine-grape">Hondarrabi Zuri y Hondarrabi Zuri Zerratie</span></div><span class="wine-price">20,00 €</span></div>
+  <!-- ═══ VINO BLANCO ES ═══ -->
+  <section class="cat-section" data-lang="es" id="vi-blanc">
+    <div class="cat-header"><span class="cat-icon">🥂</span><h2 class="cat-title">Vino <em>Blanco</em></h2><span class="cat-count">8 vinos</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Mas Cabellut</div><p class="dish-note">Penedès · Chardonnay</p><div class="dish-footer"><span class="dish-price">20,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge">Barrica</span></div><div class="dish-card-body"><div class="dish-name">Bosc Negre</div><p class="dish-note">Penedès · Xarel·lo 100% — Fermentado en barrica</p><div class="dish-footer"><span class="dish-price">32,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Acústic</div><p class="dish-note">Montsant · Garnacha y Macabeo</p><div class="dish-footer"><span class="dish-price">21,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Dneu</div><p class="dish-note">Vins de Cerdanya · Sauvignon Blanc</p><div class="dish-footer"><span class="dish-price">31,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Jose Pariente Verdejo</div><p class="dish-note">Rueda · Verdejo 100%</p><div class="dish-footer"><span class="dish-price">20,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge">Barrica</span></div><div class="dish-card-body"><div class="dish-name">Ramón do Casar</div><p class="dish-note">Ribeiro · Godello 100% — 6 meses en barrica</p><div class="dish-footer"><span class="dish-price">22,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">La Trucha</div><p class="dish-note">Rías Baixas · Albariño 100%</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Astobiza</div><p class="dish-note">Txakoli de Álava · Hondarrabi Zuri</p><div class="dish-footer"><span class="dish-price">20,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="en" id="vi-blanc">
-    <div class="cat-header">
-      <span class="cat-icon">🥂</span>
-      <h2 class="cat-title"><em>White Wine</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Mas Cabellut</span><span class="wine-grape">Chardonnay</span></div><span class="wine-price">20,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Bosc Negre</span><span class="wine-grape">Xarel·lo 100% — Barrel fermented</span></div><span class="wine-price">32,50 €</span></div>
-      <div class="wine-region">Montsant</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Acústic</span><span class="wine-grape">Grenache & Macabeo</span></div><span class="wine-price">21,00 €</span></div>
-      <div class="wine-region">Vins de Cerdanya (Llívia)</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Dneu</span><span class="wine-grape">Sauvignon Blanc</span></div><span class="wine-price">31,50 €</span></div>
-      <div class="wine-region">Rueda</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Jose Pariente Verdejo</span><span class="wine-grape">Verdejo 100%</span></div><span class="wine-price">20,50 €</span></div>
-      <div class="wine-region">Ribeiro</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Ramón do Casar</span><span class="wine-grape">Godello 100% — 6 months barrel aged</span></div><span class="wine-price">22,50 €</span></div>
-      <div class="wine-region">Rías Baixas</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">La Trucha</span><span class="wine-grape">Albariño 100%</span></div><span class="wine-price">22,00 €</span></div>
-      <div class="wine-region">Txakoli de Álava</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Astobiza</span><span class="wine-grape">Hondarrabi Zuri & Hondarrabi Zuri Zerratie</span></div><span class="wine-price">20,00 €</span></div>
+  <!-- ═══ WHITE WINE EN ═══ -->
+  <section class="cat-section" data-lang="en" id="vi-blanc">
+    <div class="cat-header"><span class="cat-icon">🥂</span><h2 class="cat-title"><em>White</em> Wine</h2><span class="cat-count">8 wines</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Mas Cabellut</div><p class="dish-note">Penedès · Chardonnay</p><div class="dish-footer"><span class="dish-price">20,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge">Barrel</span></div><div class="dish-card-body"><div class="dish-name">Bosc Negre</div><p class="dish-note">Penedès · Xarel·lo 100% — Barrel fermented</p><div class="dish-footer"><span class="dish-price">32,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Acústic</div><p class="dish-note">Montsant · Grenache & Macabeo</p><div class="dish-footer"><span class="dish-price">21,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Dneu</div><p class="dish-note">Vins de Cerdanya · Sauvignon Blanc</p><div class="dish-footer"><span class="dish-price">31,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Jose Pariente Verdejo</div><p class="dish-note">Rueda · Verdejo 100%</p><div class="dish-footer"><span class="dish-price">20,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge">Barrel</span></div><div class="dish-card-body"><div class="dish-name">Ramón do Casar</div><p class="dish-note">Ribeiro · Godello 100% — 6 months barrel aged</p><div class="dish-footer"><span class="dish-price">22,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">La Trucha</div><p class="dish-note">Rías Baixas · Albariño 100%</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂</div><div class="dish-card-body"><div class="dish-name">Astobiza</div><p class="dish-note">Txakoli de Álava · Hondarrabi Zuri</p><div class="dish-footer"><span class="dish-price">20,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <!-- ══════════════════════════
-       VI NEGRE
-  ═══════════════════════════ -->
-  <section class="cat-section beg-section" data-lang="ca" id="vi-negre">
-    <div class="cat-header">
-      <span class="cat-icon">🍷</span>
-      <h2 class="cat-title"><em>Vi Negre</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Casa Bella (Jové & Camps)</span><span class="wine-grape">Cabernet Sauvignon</span></div><span class="wine-price">23,00 €</span></div>
-      <div class="wine-region">Priorat</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">90 Minuts</span><span class="wine-grape">Garnatxa, Carinyena, Cabernet Sauvignon i Syra</span></div><span class="wine-price">24,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Lo Mon</span><span class="wine-grape">Garnatxa, Carinyena, Syrah i Cabernet Sauvignon</span></div><span class="wine-price">29,00 €</span></div>
-      <div class="wine-region">Costers del Segre</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Celistia Selecció T</span><span class="wine-grape">Garnatxa i Syrah</span></div><span class="wine-price">21,50 €</span></div>
-      <div class="wine-region">Rioja</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Luís Cañas Crianza</span><span class="wine-grape">Tempranillo i Garnatxa</span></div><span class="wine-price">22,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Ángeles de Amaren</span><span class="wine-grape">Tempranillo i Graciano</span></div><span class="wine-price">28,50 €</span></div>
-      <div class="wine-region">Ribera del Duero</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Barrueco (Pagos de Anguix)</span><span class="wine-grape">Fino tinto 100%</span></div><span class="wine-price">41,00 €</span></div>
+  <!-- ═══ VI NEGRE CA ═══ -->
+  <section class="cat-section" data-lang="ca" id="vi-negre">
+    <div class="cat-header"><span class="cat-icon">🍷</span><h2 class="cat-title">Vi <em>Negre</em></h2><span class="cat-count">7 vins</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Casa Bella</div><p class="dish-note">Penedès · Cabernet Sauvignon</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">90 Minuts</div><p class="dish-note">Priorat · Garnatxa, Carinyena, Cab. Sauv. i Syrah</p><div class="dish-footer"><span class="dish-price">24,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Lo Mon</div><p class="dish-note">Priorat · Garnatxa, Carinyena, Syrah i Cab. Sauv.</p><div class="dish-footer"><span class="dish-price">29,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Celistia Selecció T</div><p class="dish-note">Costers del Segre · Garnatxa i Syrah</p><div class="dish-footer"><span class="dish-price">21,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Luís Cañas Crianza</div><p class="dish-note">Rioja · Tempranillo i Garnatxa</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Ángeles de Amaren</div><p class="dish-note">Rioja · Tempranillo i Graciano</p><div class="dish-footer"><span class="dish-price">28,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷<span class="dish-badge">Top</span></div><div class="dish-card-body"><div class="dish-name">Barrueco</div><p class="dish-note">Ribera del Duero · Fino tinto 100%</p><div class="dish-footer"><span class="dish-price">41,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="es" id="vi-negre">
-    <div class="cat-header">
-      <span class="cat-icon">🍷</span>
-      <h2 class="cat-title"><em>Vino Tinto</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Casa Bella (Jové & Camps)</span><span class="wine-grape">Cabernet Sauvignon</span></div><span class="wine-price">23,00 €</span></div>
-      <div class="wine-region">Priorat</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">90 Minutos</span><span class="wine-grape">Garnacha, Cariñena, Cabernet Sauvignon y Syrah</span></div><span class="wine-price">24,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Lo Mon</span><span class="wine-grape">Garnacha, Cariñena, Syrah y Cabernet Sauvignon</span></div><span class="wine-price">29,00 €</span></div>
-      <div class="wine-region">Costers del Segre</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Celistia Selección T</span><span class="wine-grape">Garnacha y Syrah</span></div><span class="wine-price">21,50 €</span></div>
-      <div class="wine-region">Rioja</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Luís Cañas Crianza</span><span class="wine-grape">Tempranillo y Garnacha</span></div><span class="wine-price">22,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Ángeles de Amaren</span><span class="wine-grape">Tempranillo y Graciano</span></div><span class="wine-price">28,50 €</span></div>
-      <div class="wine-region">Ribera del Duero</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Barrueco (Pagos de Anguix)</span><span class="wine-grape">Fino tinto 100%</span></div><span class="wine-price">41,00 €</span></div>
+  <!-- ═══ VINO TINTO ES ═══ -->
+  <section class="cat-section" data-lang="es" id="vi-negre">
+    <div class="cat-header"><span class="cat-icon">🍷</span><h2 class="cat-title">Vino <em>Tinto</em></h2><span class="cat-count">7 vinos</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Casa Bella</div><p class="dish-note">Penedès · Cabernet Sauvignon</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">90 Minutos</div><p class="dish-note">Priorat · Garnacha, Cariñena, Cab. Sauv. y Syrah</p><div class="dish-footer"><span class="dish-price">24,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Lo Mon</div><p class="dish-note">Priorat · Garnacha, Cariñena, Syrah y Cab. Sauv.</p><div class="dish-footer"><span class="dish-price">29,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Celistia Selección T</div><p class="dish-note">Costers del Segre · Garnacha y Syrah</p><div class="dish-footer"><span class="dish-price">21,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Luís Cañas Crianza</div><p class="dish-note">Rioja · Tempranillo y Garnacha</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Ángeles de Amaren</div><p class="dish-note">Rioja · Tempranillo y Graciano</p><div class="dish-footer"><span class="dish-price">28,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷<span class="dish-badge">Top</span></div><div class="dish-card-body"><div class="dish-name">Barrueco</div><p class="dish-note">Ribera del Duero · Fino tinto 100%</p><div class="dish-footer"><span class="dish-price">41,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="en" id="vi-negre">
-    <div class="cat-header">
-      <span class="cat-icon">🍷</span>
-      <h2 class="cat-title"><em>Red Wine</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Casa Bella (Jové & Camps)</span><span class="wine-grape">Cabernet Sauvignon</span></div><span class="wine-price">23,00 €</span></div>
-      <div class="wine-region">Priorat</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">90 Minuts</span><span class="wine-grape">Grenache, Carignan, Cabernet Sauvignon & Syrah</span></div><span class="wine-price">24,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Lo Mon</span><span class="wine-grape">Grenache, Carignan, Syrah & Cabernet Sauvignon</span></div><span class="wine-price">29,00 €</span></div>
-      <div class="wine-region">Costers del Segre</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Celistia Selecció T</span><span class="wine-grape">Grenache & Syrah</span></div><span class="wine-price">21,50 €</span></div>
-      <div class="wine-region">Rioja</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Luís Cañas Crianza</span><span class="wine-grape">Tempranillo & Grenache</span></div><span class="wine-price">22,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Ángeles de Amaren</span><span class="wine-grape">Tempranillo & Graciano</span></div><span class="wine-price">28,50 €</span></div>
-      <div class="wine-region">Ribera del Duero</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Barrueco (Pagos de Anguix)</span><span class="wine-grape">Fino tinto 100%</span></div><span class="wine-price">41,00 €</span></div>
+  <!-- ═══ RED WINE EN ═══ -->
+  <section class="cat-section" data-lang="en" id="vi-negre">
+    <div class="cat-header"><span class="cat-icon">🍷</span><h2 class="cat-title"><em>Red</em> Wine</h2><span class="cat-count">7 wines</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Casa Bella</div><p class="dish-note">Penedès · Cabernet Sauvignon</p><div class="dish-footer"><span class="dish-price">23,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">90 Minuts</div><p class="dish-note">Priorat · Grenache, Carignan, Cab. Sauv. & Syrah</p><div class="dish-footer"><span class="dish-price">24,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Lo Mon</div><p class="dish-note">Priorat · Grenache, Carignan, Syrah & Cab. Sauv.</p><div class="dish-footer"><span class="dish-price">29,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Celistia Selecció T</div><p class="dish-note">Costers del Segre · Grenache & Syrah</p><div class="dish-footer"><span class="dish-price">21,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Luís Cañas Crianza</div><p class="dish-note">Rioja · Tempranillo & Grenache</p><div class="dish-footer"><span class="dish-price">22,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷</div><div class="dish-card-body"><div class="dish-name">Ángeles de Amaren</div><p class="dish-note">Rioja · Tempranillo & Graciano</p><div class="dish-footer"><span class="dish-price">28,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍷<span class="dish-badge">Top</span></div><div class="dish-card-body"><div class="dish-name">Barrueco</div><p class="dish-note">Ribera del Duero · Fino tinto 100%</p><div class="dish-footer"><span class="dish-price">41,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <!-- ══════════════════════════
-       VI ROSAT
-  ═══════════════════════════ -->
-  <section class="cat-section beg-section" data-lang="ca" id="vi-rosat">
-    <div class="cat-header">
-      <span class="cat-icon">🌸</span>
-      <h2 class="cat-title"><em>Vi Rosat</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Pardas</span><span class="wine-grape">Sumoll</span></div><span class="wine-price">19,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Gran Caus Rosat</span><span class="wine-grape">Merlot</span></div><span class="wine-price">25,50 €</span></div>
-      <div class="wine-region">Navarra</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Chivite</span><span class="wine-grape">Garnatxa</span></div><span class="wine-price">19,00 €</span></div>
+  <!-- ═══ VI ROSAT CA ═══ -->
+  <section class="cat-section" data-lang="ca" id="vi-rosat">
+    <div class="cat-header"><span class="cat-icon">🌸</span><h2 class="cat-title">Vi <em>Rosat</em></h2><span class="cat-count">3 vins</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Pardas</div><p class="dish-note">Penedès · Sumoll</p><div class="dish-footer"><span class="dish-price">19,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Gran Caus Rosat</div><p class="dish-note">Penedès · Merlot</p><div class="dish-footer"><span class="dish-price">25,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Chivite</div><p class="dish-note">Navarra · Garnatxa</p><div class="dish-footer"><span class="dish-price">19,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="es" id="vi-rosat">
-    <div class="cat-header">
-      <span class="cat-icon">🌸</span>
-      <h2 class="cat-title"><em>Vino Rosado</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Pardas</span><span class="wine-grape">Sumoll</span></div><span class="wine-price">19,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Gran Caus Rosat</span><span class="wine-grape">Merlot</span></div><span class="wine-price">25,50 €</span></div>
-      <div class="wine-region">Navarra</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Chivite</span><span class="wine-grape">Garnacha</span></div><span class="wine-price">19,00 €</span></div>
+  <!-- ═══ VINO ROSADO ES ═══ -->
+  <section class="cat-section" data-lang="es" id="vi-rosat">
+    <div class="cat-header"><span class="cat-icon">🌸</span><h2 class="cat-title">Vino <em>Rosado</em></h2><span class="cat-count">3 vinos</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Pardas</div><p class="dish-note">Penedès · Sumoll</p><div class="dish-footer"><span class="dish-price">19,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Gran Caus Rosat</div><p class="dish-note">Penedès · Merlot</p><div class="dish-footer"><span class="dish-price">25,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Chivite</div><p class="dish-note">Navarra · Garnacha</p><div class="dish-footer"><span class="dish-price">19,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="en" id="vi-rosat">
-    <div class="cat-header">
-      <span class="cat-icon">🌸</span>
-      <h2 class="cat-title"><em>Rosé Wine</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Penedès</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Pardas</span><span class="wine-grape">Sumoll</span></div><span class="wine-price">19,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Gran Caus Rosat</span><span class="wine-grape">Merlot</span></div><span class="wine-price">25,50 €</span></div>
-      <div class="wine-region">Navarra</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Chivite</span><span class="wine-grape">Grenache</span></div><span class="wine-price">19,00 €</span></div>
+  <!-- ═══ ROSÉ EN ═══ -->
+  <section class="cat-section" data-lang="en" id="vi-rosat">
+    <div class="cat-header"><span class="cat-icon">🌸</span><h2 class="cat-title"><em>Rosé</em> Wine</h2><span class="cat-count">3 wines</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Pardas</div><p class="dish-note">Penedès · Sumoll</p><div class="dish-footer"><span class="dish-price">19,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Gran Caus Rosat</div><p class="dish-note">Penedès · Merlot</p><div class="dish-footer"><span class="dish-price">25,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🌸</div><div class="dish-card-body"><div class="dish-name">Chivite</div><p class="dish-note">Navarra · Grenache</p><div class="dish-footer"><span class="dish-price">19,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <!-- ══════════════════════════
-       CAVA & CHAMPAGNE
-  ═══════════════════════════ -->
-  <section class="cat-section beg-section" data-lang="ca" id="cava">
-    <div class="cat-header">
-      <span class="cat-icon">🍾</span>
-      <h2 class="cat-title">Cava <em>& Champagne</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Cavas</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Maria Casanovas Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu i Parellada</span></div><span class="wine-price">19,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Maria Casanovas Brut Nature Reserva</span><span class="wine-grape">Rosat de Pinot Noir 100%</span></div><span class="wine-price">32,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Pas de Sucre Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu i Parellada</span></div><span class="wine-price">19,00 €</span></div>
-      <div class="wine-region">Corpinnat</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Llopart Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu i Parellada</span></div><span class="wine-price">24,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Gramona Imperial</span><span class="wine-grape">Xarel·lo, Macabeu, Chardonnay i Parellada</span></div><span class="wine-price">33,00 €</span></div>
-      <div class="wine-item wine-item--highlight"><div class="wine-info"><span class="wine-name">Sabaté i Coca Reserva Familiar</span><span class="wine-grape">Xarel·lo 100% — Fermentat 98 mesos en barrica</span></div><span class="wine-price">48,00 €</span></div>
-      <div class="wine-region">Champagne</div>
-      <div class="wine-item wine-item--premium"><div class="wine-info"><span class="wine-name">Bollinger Special Cuvée Brut</span><span class="wine-grape">Pinot Noir, Chardonnay, Pinot Meunier</span></div><span class="wine-price">75,00 €</span></div>
+  <!-- ═══ CAVA CA ═══ -->
+  <section class="cat-section" data-lang="ca" id="cava">
+    <div class="cat-header"><span class="cat-icon">🍾</span><h2 class="cat-title">Cava <em>& Champagne</em></h2><span class="cat-count">7 referències</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Maria Casanovas BN</div><p class="dish-note">Cava · Xarel·lo, Macabeu i Parellada</p><div class="dish-footer"><span class="dish-price">19,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Maria Casanovas BN Reserva</div><p class="dish-note">Cava Rosat · Pinot Noir 100%</p><div class="dish-footer"><span class="dish-price">32,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Pas de Sucre BN</div><p class="dish-note">Cava · Xarel·lo, Macabeu i Parellada</p><div class="dish-footer"><span class="dish-price">19,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Llopart BN</div><p class="dish-note">Corpinnat · Xarel·lo, Macabeu i Parellada</p><div class="dish-footer"><span class="dish-price">24,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Gramona Imperial</div><p class="dish-note">Corpinnat · Xarel·lo, Macabeu, Chardonnay i Parellada</p><div class="dish-footer"><span class="dish-price">33,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Sabaté i Coca Reserva Familiar</div><p class="dish-note">Corpinnat · Xarel·lo 100% — 98 mesos en barrica</p><div class="dish-footer"><span class="dish-price">48,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge" style="background:var(--gold);color:var(--deep)">Champagne</span></div><div class="dish-card-body"><div class="dish-name">Bollinger Special Cuvée Brut</div><p class="dish-note">Champagne · Pinot Noir, Chardonnay, Pinot Meunier</p><div class="dish-footer"><span class="dish-price">75,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="es" id="cava">
-    <div class="cat-header">
-      <span class="cat-icon">🍾</span>
-      <h2 class="cat-title">Cava <em>& Champagne</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Cavas</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Maria Casanovas Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu y Parellada</span></div><span class="wine-price">19,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Maria Casanovas Brut Nature Reserva</span><span class="wine-grape">Rosado de Pinot Noir 100%</span></div><span class="wine-price">32,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Pas de Sucre Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu y Parellada</span></div><span class="wine-price">19,00 €</span></div>
-      <div class="wine-region">Corpinnat</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Llopart Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu y Parellada</span></div><span class="wine-price">24,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Gramona Imperial</span><span class="wine-grape">Xarel·lo, Macabeu, Chardonnay y Parellada</span></div><span class="wine-price">33,00 €</span></div>
-      <div class="wine-item wine-item--highlight"><div class="wine-info"><span class="wine-name">Sabaté i Coca Reserva Familiar</span><span class="wine-grape">Xarel·lo 100% — Fermentado 98 meses en barrica</span></div><span class="wine-price">48,00 €</span></div>
-      <div class="wine-region">Champagne</div>
-      <div class="wine-item wine-item--premium"><div class="wine-info"><span class="wine-name">Bollinger Special Cuvée Brut</span><span class="wine-grape">Pinot Noir, Chardonnay, Pinot Meunier</span></div><span class="wine-price">75,00 €</span></div>
+  <!-- ═══ CAVA ES ═══ -->
+  <section class="cat-section" data-lang="es" id="cava">
+    <div class="cat-header"><span class="cat-icon">🍾</span><h2 class="cat-title">Cava <em>& Champagne</em></h2><span class="cat-count">7 referencias</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Maria Casanovas BN</div><p class="dish-note">Cava · Xarel·lo, Macabeu y Parellada</p><div class="dish-footer"><span class="dish-price">19,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Maria Casanovas BN Reserva</div><p class="dish-note">Cava Rosado · Pinot Noir 100%</p><div class="dish-footer"><span class="dish-price">32,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Pas de Sucre BN</div><p class="dish-note">Cava · Xarel·lo, Macabeu y Parellada</p><div class="dish-footer"><span class="dish-price">19,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Llopart BN</div><p class="dish-note">Corpinnat · Xarel·lo, Macabeu y Parellada</p><div class="dish-footer"><span class="dish-price">24,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Gramona Imperial</div><p class="dish-note">Corpinnat · Xarel·lo, Macabeu, Chardonnay y Parellada</p><div class="dish-footer"><span class="dish-price">33,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Sabaté i Coca Reserva Familiar</div><p class="dish-note">Corpinnat · Xarel·lo 100% — 98 meses en barrica</p><div class="dish-footer"><span class="dish-price">48,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge" style="background:var(--gold);color:var(--deep)">Champagne</span></div><div class="dish-card-body"><div class="dish-name">Bollinger Special Cuvée Brut</div><p class="dish-note">Champagne · Pinot Noir, Chardonnay, Pinot Meunier</p><div class="dish-footer"><span class="dish-price">75,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="en" id="cava">
-    <div class="cat-header">
-      <span class="cat-icon">🍾</span>
-      <h2 class="cat-title">Cava <em>& Champagne</em></h2>
-    </div>
-    <div class="wine-list">
-      <div class="wine-region">Cavas</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Maria Casanovas Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu & Parellada</span></div><span class="wine-price">19,50 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Maria Casanovas Brut Nature Reserva</span><span class="wine-grape">100% Pinot Noir Rosé</span></div><span class="wine-price">32,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Pas de Sucre Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu & Parellada</span></div><span class="wine-price">19,00 €</span></div>
-      <div class="wine-region">Corpinnat</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Llopart Brut Nature</span><span class="wine-grape">Xarel·lo, Macabeu & Parellada</span></div><span class="wine-price">24,00 €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Gramona Imperial</span><span class="wine-grape">Xarel·lo, Macabeu, Chardonnay & Parellada</span></div><span class="wine-price">33,00 €</span></div>
-      <div class="wine-item wine-item--highlight"><div class="wine-info"><span class="wine-name">Sabaté i Coca Reserva Familiar</span><span class="wine-grape">Xarel·lo 100% — 98 months barrel aged</span></div><span class="wine-price">48,00 €</span></div>
-      <div class="wine-region">Champagne</div>
-      <div class="wine-item wine-item--premium"><div class="wine-info"><span class="wine-name">Bollinger Special Cuvée Brut</span><span class="wine-grape">Pinot Noir, Chardonnay, Pinot Meunier</span></div><span class="wine-price">75,00 €</span></div>
+  <!-- ═══ CAVA EN ═══ -->
+  <section class="cat-section" data-lang="en" id="cava">
+    <div class="cat-header"><span class="cat-icon">🍾</span><h2 class="cat-title">Cava <em>& Champagne</em></h2><span class="cat-count">7 references</span></div>
+    <div class="dish-grid">
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Maria Casanovas BN</div><p class="dish-note">Cava · Xarel·lo, Macabeu & Parellada</p><div class="dish-footer"><span class="dish-price">19,50 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Maria Casanovas BN Reserva</div><p class="dish-note">Cava Rosé · Pinot Noir 100%</p><div class="dish-footer"><span class="dish-price">32,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Pas de Sucre BN</div><p class="dish-note">Cava · Xarel·lo, Macabeu & Parellada</p><div class="dish-footer"><span class="dish-price">19,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Llopart BN</div><p class="dish-note">Corpinnat · Xarel·lo, Macabeu & Parellada</p><div class="dish-footer"><span class="dish-price">24,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾</div><div class="dish-card-body"><div class="dish-name">Gramona Imperial</div><p class="dish-note">Corpinnat · Xarel·lo, Macabeu, Chardonnay & Parellada</p><div class="dish-footer"><span class="dish-price">33,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🍾<span class="dish-badge">⭐ Top</span></div><div class="dish-card-body"><div class="dish-name">Sabaté i Coca Reserva Familiar</div><p class="dish-note">Corpinnat · Xarel·lo 100% — 98 months barrel aged</p><div class="dish-footer"><span class="dish-price">48,00 €</span><span class="dish-arrow">→</span></div></div></a>
+      <a href="#" class="dish-card"><div class="dish-card-img" style="font-size:2rem">🥂<span class="dish-badge" style="background:var(--gold);color:var(--deep)">Champagne</span></div><div class="dish-card-body"><div class="dish-name">Bollinger Special Cuvée Brut</div><p class="dish-note">Champagne · Pinot Noir, Chardonnay, Pinot Meunier</p><div class="dish-footer"><span class="dish-price">75,00 €</span><span class="dish-arrow">→</span></div></div></a>
     </div>
   </section>
 
-  <!-- ══════════════════════════
-       REFRESCOS & AIGÜS
-  ═══════════════════════════ -->
-  <section class="cat-section beg-section" data-lang="ca" id="refrescos">
-    <div class="cat-header">
-      <span class="cat-icon">🥤</span>
-      <h2 class="cat-title">Refrescos <em>& Aigües</em></h2>
-    </div>
+  <!-- ═══ REFRESCOS CA ═══ -->
+  <section class="cat-section" data-lang="ca" id="refrescos">
+    <div class="cat-header"><span class="cat-icon">🥤</span><h2 class="cat-title">Refrescos <em>& Aigües</em></h2></div>
     <div class="wine-list">
       <div class="wine-region">Refrescos</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola</span><span class="wine-grape">Normal</span></div><span class="wine-price">— €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola Zero</span><span class="wine-grape">Sense sucre</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola Zero</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Cerveses</div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">1870</span><span class="wine-grape">Cervesa artesana</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Amstel 0,0 Tostada</span><span class="wine-grape">Sense alcohol</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Amstel Radler</span><span class="wine-grape">Cervesa amb llimona</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Tòniques</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Tònica Natural</span><span class="wine-grape">Ideal per a gin tonics</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Tònica Natural</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Tònica de Llimona</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Tònica de Taronja</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Bitter & Vermut</div>
@@ -363,25 +258,23 @@
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Vermut Blanc</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Aigües</div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Mondariz</span><span class="wine-grape">1 litre — del temps o freda</span></div><span class="wine-price">— €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Vichy Catalan</span><span class="wine-grape">Aigua amb gas — 330 ml</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Vichy Catalan</span><span class="wine-grape">Amb gas — 330 ml</span></div><span class="wine-price">— €</span></div>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="es" id="refrescos">
-    <div class="cat-header">
-      <span class="cat-icon">🥤</span>
-      <h2 class="cat-title">Refrescos <em>& Aguas</em></h2>
-    </div>
+  <!-- ═══ REFRESCOS ES ═══ -->
+  <section class="cat-section" data-lang="es" id="refrescos">
+    <div class="cat-header"><span class="cat-icon">🥤</span><h2 class="cat-title">Refrescos <em>& Aguas</em></h2></div>
     <div class="wine-list">
       <div class="wine-region">Refrescos</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola</span><span class="wine-grape">Normal</span></div><span class="wine-price">— €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola Zero</span><span class="wine-grape">Sin azúcar</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola Zero</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Cervezas</div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">1870</span><span class="wine-grape">Cerveza artesana</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Amstel 0,0 Tostada</span><span class="wine-grape">Sin alcohol</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Amstel Radler</span><span class="wine-grape">Cerveza con limón</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Tónicas</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Tónica Natural</span><span class="wine-grape">Ideal para gin tonics</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Tónica Natural</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Tónica de Limón</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Tónica de Naranja</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Bitter & Vermut</div>
@@ -391,15 +284,13 @@
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Vermut Blanco</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Aguas</div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Mondariz</span><span class="wine-grape">1 litro — del tiempo o fría</span></div><span class="wine-price">— €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Vichy Catalan</span><span class="wine-grape">Agua con gas — 330 ml</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Vichy Catalan</span><span class="wine-grape">Con gas — 330 ml</span></div><span class="wine-price">— €</span></div>
     </div>
   </section>
 
-  <section class="cat-section beg-section" data-lang="en" id="refrescos">
-    <div class="cat-header">
-      <span class="cat-icon">🥤</span>
-      <h2 class="cat-title">Soft Drinks <em>& Water</em></h2>
-    </div>
+  <!-- ═══ SOFT DRINKS EN ═══ -->
+  <section class="cat-section" data-lang="en" id="refrescos">
+    <div class="cat-header"><span class="cat-icon">🥤</span><h2 class="cat-title">Soft Drinks <em>& Water</em></h2></div>
     <div class="wine-list">
       <div class="wine-region">Soft Drinks</div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Coca-Cola</span></div><span class="wine-price">— €</span></div>
@@ -409,7 +300,7 @@
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Amstel 0,0 Tostada</span><span class="wine-grape">Alcohol-free</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Amstel Radler</span><span class="wine-grape">Beer with lemon</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Tonics</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Classic Tonic Water</span><span class="wine-grape">Perfect for gin & tonics</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Classic Tonic</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Lemon Tonic</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Orange Tonic</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Bitter & Vermouth</div>
@@ -418,8 +309,8 @@
       <div class="wine-item"><div class="wine-info"><span class="wine-name">Red Vermouth</span></div><span class="wine-price">— €</span></div>
       <div class="wine-item"><div class="wine-info"><span class="wine-name">White Vermouth</span></div><span class="wine-price">— €</span></div>
       <div class="wine-region">Water</div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Mondariz</span><span class="wine-grape">1 litre — room temperature or cold</span></div><span class="wine-price">— €</span></div>
-      <div class="wine-item"><div class="wine-info"><span class="wine-name">Vichy Catalan</span><span class="wine-grape">Sparkling water — 330 ml</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Mondariz</span><span class="wine-grape">1 litre — still, room temperature or cold</span></div><span class="wine-price">— €</span></div>
+      <div class="wine-item"><div class="wine-info"><span class="wine-name">Vichy Catalan</span><span class="wine-grape">Sparkling — 330 ml</span></div><span class="wine-price">— €</span></div>
     </div>
   </section>
 
@@ -427,7 +318,7 @@
     <strong data-lang="ca">Nota:</strong>
     <strong data-lang="es">Nota:</strong>
     <strong data-lang="en">Note:</strong>
-    <span data-lang="ca"> Els preus marcats amb — s'actualitzen pròximament. Consulta disponibilitat al servei de sala.</span>
+    <span data-lang="ca"> Els preus marcats amb — s'actualitzen aviat. Consulta disponibilitat al servei de sala.</span>
     <span data-lang="es"> Los precios marcados con — se actualizan próximamente. Consulta disponibilidad al servicio de sala.</span>
     <span data-lang="en"> Prices marked — will be updated shortly. Ask our staff for availability.</span>
   </div>
@@ -447,19 +338,21 @@
         <a href="#vi-blanc"><span data-lang="ca">Vi Blanc</span><span data-lang="es">Vino Blanco</span><span data-lang="en">White Wine</span></a>
         <a href="#vi-negre"><span data-lang="ca">Vi Negre</span><span data-lang="es">Vino Tinto</span><span data-lang="en">Red Wine</span></a>
         <a href="#vi-rosat"><span data-lang="ca">Vi Rosat</span><span data-lang="es">Vino Rosado</span><span data-lang="en">Rosé</span></a>
-        <a href="#cava"><span data-lang="ca">Cava & Champagne</span><span data-lang="es">Cava & Champagne</span><span data-lang="en">Cava & Champagne</span></a>
+        <a href="#cava">Cava & Champagne</a>
         <a href="#refrescos"><span data-lang="ca">Refrescos</span><span data-lang="es">Refrescos</span><span data-lang="en">Soft Drinks</span></a>
       </div>
       <div class="footer-col">
         <h5><span data-lang="ca">Horari</span><span data-lang="es">Horario</span><span data-lang="en">Hours</span></h5>
-        <p>Vi–Do: 13:30–16:00</p><p>Vi–Sá: 20:30–23:00</p>
-        <p><span data-lang="ca">Dl–Dj: Tancat</span><span data-lang="es">Lu–Ju: Cerrado</span><span data-lang="en">Mon–Thu: Closed</span></p>
+        <p><span data-lang="ca">Ds–Dg: 13:30–15:30</span><span data-lang="es">Sá–Do: 13:30–15:30</span><span data-lang="en">Sat–Sun: 1:30–3:30pm</span></p>
+        <p><span data-lang="ca">Dc–Dj: 13:00–15:30</span><span data-lang="es">Mi–Ju: 13:00–15:30</span><span data-lang="en">Wed–Thu: 1:00–3:30pm</span></p>
+        <p><span data-lang="ca">Dv: 13:30–15:30</span><span data-lang="es">Vi: 13:30–15:30</span><span data-lang="en">Fri: 1:30–3:30pm</span></p>
+        <p><span data-lang="ca">Dl–Dm: Tancat</span><span data-lang="es">Lu–Ma: Cerrado</span><span data-lang="en">Mon–Tue: Closed</span></p>
       </div>
       <div class="footer-col">
         <h5><span data-lang="ca">Contacte</span><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></h5>
         <a href="tel:+34938110801">+34 938 11 08 01</a>
         <a href="https://www.instagram.com/lamarinada.sitges" target="_blank">@lamarinada.sitges</a>
-        <p>C. Rafael Llopart, 49<br>Sitges</p>
+        <a href="https://maps.app.goo.gl/DbhWKGogLUuY2MYQ8" target="_blank" rel="noopener">C. Rafael Llopart, 49<br>Sitges</a>
       </div>
     </div>
     <div class="footer-bottom">
